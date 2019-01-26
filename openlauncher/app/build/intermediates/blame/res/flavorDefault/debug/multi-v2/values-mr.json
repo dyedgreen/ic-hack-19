@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultDebugResources/merged.dir/values-mr/values-mr.xml",
+            "outputFile": "D:\\Bargavi C\\ic-hack-19\\openlauncher\\app\\build\\intermediates\\incremental\\mergeFlavorDefaultDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
-                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/values-mr/values-mr.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,322,429,519,620,735,812,890,970,1082,1184,1280,1389,1490,1605,1762,1867",
-                        "endColumns": "110,105,106,89,100,114,76,77,79,111,101,95,108,100,114,156,104,79",
-                        "endOffsets": "211,317,424,514,615,730,807,885,965,1077,1179,1275,1384,1485,1600,1757,1862,1942"
-                    }
-                },
-                {
-                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/619627ac1eaa25771cba2ee8956ed914/res/values-mr/values-mr.xml",
+                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\f73ca1f4226c0e423fb78154b515e9dc\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1947",
                         "endColumns": "100",
                         "endOffsets": "2043"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3a3ffa420483930a9dbb895aca4987f2\\res\\values-mr\\values-mr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,322,429,519,620,735,812,890,970,1082,1184,1280,1389,1490,1605,1762,1867",
+                        "endColumns": "110,105,106,89,100,114,76,77,79,111,101,95,108,100,114,156,104,79",
+                        "endOffsets": "211,317,424,514,615,730,807,885,965,1077,1179,1275,1384,1485,1600,1757,1862,1942"
                     }
                 }
             ]

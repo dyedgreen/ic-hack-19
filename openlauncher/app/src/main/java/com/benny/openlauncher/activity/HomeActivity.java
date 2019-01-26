@@ -343,7 +343,11 @@ public final class HomeActivity extends Activity implements OnDesktopEditListene
         } else {
             try {
                 Intent intent = Tool.getIntentFromApp(app);
-                context.startActivity(intent, getActivityAnimationOpts(view));
+                Intent chatIntent = new Intent();
+                chatIntent.setClassName("com.stfalcon.chatkit.sample", "com.stfalcon.chatkit.sample.features.main.MainActivity");
+                //context.startActivity(chatIntent);
+
+                context.startActivity(chatIntent, getActivityAnimationOpts(view));
                 // close app drawer and other items in advance
                 // annoying to wait for app drawer to close
                 handleLauncherResume();

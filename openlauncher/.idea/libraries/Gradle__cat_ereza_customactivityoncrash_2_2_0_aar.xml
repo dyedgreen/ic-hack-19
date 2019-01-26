@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: cat.ereza:customactivityoncrash:2.2.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/2f048f0ffe619c1c2ddbed8f1b02e2b7/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/a3e683baec3eb16b93cc266251368078/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/2f048f0ffe619c1c2ddbed8f1b02e2b7/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/2f048f0ffe619c1c2ddbed8f1b02e2b7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/a3e683baec3eb16b93cc266251368078/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/a3e683baec3eb16b93cc266251368078/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

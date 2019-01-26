@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "outputFile": "D:\\Bargavi C\\ic-hack-19\\openlauncher\\app\\build\\intermediates\\incremental\\mergeFlavorDefaultDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/core-0.9.6.0.aar/a8317c2c5f76a1433e87aa9d92b7270c/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.6.0.aar\\c254e161978def0803482b0ee5c1319a\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

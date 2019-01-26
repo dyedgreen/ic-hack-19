@@ -25,6 +25,7 @@
         android:launchMode="singleTask"
         android:stateNotNeeded="true"
         android:taskAffinity=""
+        android:testOnly="true"
         android:theme="@style/Home.Light" >
         <meta-data
             android:name="android.max_aspect"
@@ -91,6 +92,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.stfalcon.chatkit.sample.features.main.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <receiver
             android:name="com.benny.openlauncher.receivers.DeviceAdminReceiver"
@@ -130,6 +138,10 @@
             android:authorities="com.benny.openlauncher.debug.customactivityoncrashinitprovider"
             android:exported="false"
             android:initOrder="101" />
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.benny.openlauncher.debug.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

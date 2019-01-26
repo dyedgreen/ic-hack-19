@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "D:\\Bargavi C\\ic-hack-19\\openlauncher\\app\\build\\intermediates\\incremental\\mergeFlavorDefaultDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/values-v17/values-v17.xml",
+                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3a3ffa420483930a9dbb895aca4987f2\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/preference-v7-27.1.1.aar/40526ec67c10bfd82cfb36ef2f09e5c5/res/values-v17/values-v17.xml",
+                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-27.1.1.aar\\8b8d14fce2389484becd44f3facf1495\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,7,11",
                         "startColumns": "4,4,4",
