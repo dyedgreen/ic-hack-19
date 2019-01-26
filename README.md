@@ -22,7 +22,7 @@ Create a new user. Accepts parameters:
 ```
 
 ### `/<username>/update` [POST]
-Create a new user. Accepts parameters:
+Change password. Accepts parameters:
 - old_password (string)
 - new_password (string)
 
@@ -55,17 +55,53 @@ Deletes the session. Does not return anything.
 
 Manage a users recorded apps and the reasons he opened them
 
+### `/<uri>` [POST]
+Return the given app. Accepts parameters:
+- token (string) - session token
+
+```
+{
+  error: bool / string
+  uri: string
+  name: string
+  icon: string
+}
+```
+
 ### `/<uri>/create` [POST]
 Create a new app. Accepts parameters:
 - token (string) - session token
 - name (string) - name of app
 - icon (string) - uri of app icon
 
+```
+{
+  error: bool / string
+}
+```
+
 Note on uri's: For [https://tilman.xyz](https://tilman.xyz) the uri would be
 `tilman.xyz`, the icon should be `tilman.xyz/favicon.ico`. For an android app,
 the uri would be `com.example.myapp`, the icon should be empty.
 
-## `/<uri>/reason` [POST]
+## `/<uri>/reasons` [GET]
+List reasons this app was opened
+- token (string) - session token
+
+```
+{
+  error: bool / string
+  reasons: []
+}
+```
+
+## `/<uri>/reasons/add` [POST]
 Add a reason to an app. Accepts:
 - token (string) - session token
 - reason (string) - reason
+
+```
+{
+  error: bool / string
+}
+```

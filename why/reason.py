@@ -2,6 +2,8 @@
 Handles apps and reasons
 """
 
+import time
+
 from . import db
 
 
@@ -68,7 +70,7 @@ class App:
         if len(reason) == 0:
             raise ValueError("Need a reason")
         c = db.conn.cursor()
-        c.execute("INSERT INTO reasons (app, reason) VALUES (?, ?)", [self.id, str(reason)])
+        c.execute("INSERT INTO reasons (app, reason, created) VALUES (?, ?, ?)", [self.id, str(reason), time.time()])
         db.conn.commit()
 
     def __str__(self):

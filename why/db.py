@@ -5,7 +5,7 @@ Database
 import sqlite3
 
 
-conn = sqlite3.connect("./data/why-0.db")
+conn = sqlite3.connect("./data/why-1.db")
 
 # Initialize database
 def init():
@@ -43,6 +43,7 @@ def init():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             app INTEGER,
             reason TEXT NOT NULL,
+            created INTEGER NOT NULL,
             FOREIGN KEY (app) REFERENCES apps(id)
         );
     """)

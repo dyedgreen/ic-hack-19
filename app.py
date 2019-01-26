@@ -10,6 +10,8 @@ app = f.Flask(__name__)
 def test():
     return f.render_template("index.html")
 
+## API ROUTES
+
 # USER ROUTES
 
 @app.route("/api/user/register", methods=["POST"])
@@ -51,3 +53,57 @@ def api_user_logout(token):
 
 # APP (REASONS) ROUTES
 
+@app.route("/api/app/<string:uri>", methods=["GET"])
+def api_app_get(uri):
+    token = f.request.values["token"]
+    res = {
+        "error": False,
+        "uri": "",
+        "name": "",
+        "icon": "",
+    }
+    try:
+        app = why.reason_api.get(token, uri)
+        res["uri"] = uri
+        res["name"] = app.name
+        res["icon"] = app.icon
+    except Exception as e:
+        res["error"] = str(e)
+        return f.jsonify(res), 400
+    return f.jsonify(res)
+
+@app.route("/api/app/<string:uri>/create", methods=["POST"])
+def api_app_create(uri):
+    token = f.request.values["token"]
+    name = f.request.values["name"]
+    icon = f.request.values["icon"]
+    res = {"error":False}
+    try:
+        why.reason_api.create(token, uri, name, icon)
+    except Exception as e:
+        res["error"] = str(e)
+        return f.jsonify(res), 400
+    return f.jsonify(res)
+
+@app.route("/api/app/<string:uri>/reasons", methods=["GET"])
+def api_app_reasons(uri):
+    token = f.request.values["token"]
+    res = {"error":False, "reasons": []}
+    try:
+        res["reasons"] = why.reason_api.list(token, uri)
+    except Exception as e:
+        res["error"] = str(e)
+        return f.jsonify(res), 400
+    return f.jsonify(res)
+
+@app.route("/api/app/<string:uri>/reasons/add", methods=["POST"])
+def api_app_reasons_add(uri):
+    token = f.request.values["token"]
+    reason = f.request.values["reason"]
+    res = {"error":False}
+    try:
+        why.reason_api.add_reason(token, uri, reason)
+    except Exception as e:
+        res["error"] = str(e)
+        return f.jsonify(res), 400
+    return f.jsonify(res)
