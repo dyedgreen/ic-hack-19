@@ -1,3 +1,0 @@
-# Android Launcher
-
-TODO

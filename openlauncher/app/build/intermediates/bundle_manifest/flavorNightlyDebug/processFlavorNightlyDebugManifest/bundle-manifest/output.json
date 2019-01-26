@@ -1,0 +1,1 @@
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":190126,"versionName":"190126","enabled":true,"outputFile":"app-flavorNightly-debug.apk","fullName":"flavorNightlyDebug","baseName":"flavorNightly-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.benny.openlauncher.nightly.debug","split":"","minSdkVersion":"17"}}]
