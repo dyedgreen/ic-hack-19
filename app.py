@@ -10,6 +10,8 @@ app = f.Flask(__name__)
 def test():
     return f.render_template("index.html")
 
+# USER ROUTES
+
 @app.route("/api/user/register", methods=["POST"])
 def api_user_register():
     username = f.request.values["username"]
@@ -46,3 +48,6 @@ def api_user_login(app_name):
 def api_user_logout(token):
     why.user_api.logout(token)
     return "", 204
+
+# APP (REASONS) ROUTES
+
