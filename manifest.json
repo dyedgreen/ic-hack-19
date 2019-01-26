@@ -9,6 +9,17 @@
     "page_action": {
         "default_popup": "html/popup.html"
     },
+    "content_scripts" : [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+        "js": ["js/content_script.js"],
+        "css": ["css/content_style.css"],
+        "run_at": "document_start"
+        }
+    ],
     "options_page": "html/options.html",
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "manifest_version": 2
