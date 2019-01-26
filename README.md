@@ -1,3 +1,3 @@
-# Server Component
+# Android Launcher
 
 TODO
