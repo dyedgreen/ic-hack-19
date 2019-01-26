@@ -12,27 +12,27 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int layoutManager = 0x7f0400e9;
-        public static final int reverseLayout = 0x7f0401ae;
-        public static final int spanCount = 0x7f0401c4;
-        public static final int stackFromEnd = 0x7f0401ca;
+        public static final int layoutManager = 0x7f04014e;
+        public static final int reverseLayout = 0x7f040233;
+        public static final int spanCount = 0x7f04024d;
+        public static final int stackFromEnd = 0x7f040253;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f070096;
-        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f070097;
-        public static final int item_touch_helper_swipe_escape_velocity = 0x7f070098;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0700a9;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0700aa;
+        public static final int item_touch_helper_swipe_escape_velocity = 0x7f0700ab;
     }
     public static final class id {
         private id() {}
 
-        public static final int item_touch_helper_previous_elevation = 0x7f090096;
+        public static final int item_touch_helper_previous_elevation = 0x7f0900b0;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] RecyclerView = { 0x10100c4, 0x10100f1, 0x7f0400b9, 0x7f0400ba, 0x7f0400bb, 0x7f0400bc, 0x7f0400bd, 0x7f0400e9, 0x7f0401ae, 0x7f0401c4, 0x7f0401ca };
+        public static final int[] RecyclerView = { 0x10100c4, 0x10100f1, 0x7f0400f1, 0x7f0400f2, 0x7f0400f3, 0x7f0400f4, 0x7f0400f5, 0x7f04014e, 0x7f040233, 0x7f04024d, 0x7f040253 };
         public static final int RecyclerView_android_orientation = 0;
         public static final int RecyclerView_android_descendantFocusability = 1;
         public static final int RecyclerView_fastScrollEnabled = 2;

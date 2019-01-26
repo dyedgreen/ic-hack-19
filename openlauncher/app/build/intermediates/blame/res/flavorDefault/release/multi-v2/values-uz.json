@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultReleaseResources/merged.dir/values-uz/values-uz.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultReleaseResources/merged.dir/values-uz/values-uz.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/values-uz/values-uz.xml",

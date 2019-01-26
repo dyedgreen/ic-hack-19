@@ -1,20 +1,20 @@
 #Internal package file, do not edit.
-#Sat Jan 26 17:01:01 GMT 2019
-2.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
+#Sat Jan 26 20:12:14 GMT 2019
+2.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
 5.set=DEX
-0.path=RobotoCondensed-LightItalic.ttf
+0.path=RobotoCondensed-Regular.ttf
 2.baseType=DIRECTORY
-3.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
+3.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
 2.set=ASSET
-1.path=RobotoCondensed-Regular.ttf
-4.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
+1.path=RobotoCondensed-LightItalic.ttf
+4.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
 count=7
 5.baseType=DIRECTORY
 2.path=RobotoCondensed-BoldItalic.ttf
-5.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/transforms/dexMerger/flavorDefault/release/0
+5.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/transforms/dexMerger/flavorDefault/release/0
 4.set=ASSET
 3.path=RobotoCondensed-Bold.ttf
-6.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
+6.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
 3.baseType=DIRECTORY
 1.set=ASSET
 4.path=RobotoCondensed-Italic.ttf
@@ -22,10 +22,10 @@ count=7
 1.baseType=DIRECTORY
 6.baseType=DIRECTORY
 5.path=classes.dex
-0.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
+0.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
 0.baseType=DIRECTORY
 3.set=ASSET
 6.path=RobotoCondensed-Light.ttf
-1.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
+1.base=/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/merged_assets/flavorDefaultRelease/mergeFlavorDefaultReleaseAssets/out
 4.baseType=DIRECTORY
 0.set=ASSET

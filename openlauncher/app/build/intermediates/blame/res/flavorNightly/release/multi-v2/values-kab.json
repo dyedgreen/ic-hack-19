@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorNightlyReleaseResources/merged.dir/values-kab/values-kab.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorNightlyReleaseResources/merged.dir/values-kab/values-kab.xml",
             "map": [
                 {
-                    "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/values-kab/strings.xml",
+                    "source": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/src/main/res/values-kab/strings.xml",
                     "from": {
                         "startLines": "23,24,21,22,136,143,122,119,6,8,142,11,18,15,12,16,14,13,17,129,127,125,126,61,108,51,57,55,53,71,81,79,85,83,75,92,94,77,103,101,105,47,116,110,112,60,49,64,68,113,34,30,38,107,39,144,28,65,66,50,46,56,54,52,29,72,70,86,87,89,88,80,78,84,82,74,43,95,91,98,93,97,96,99,31,76,102,32,42,41,106,33,44,115,109,111,40,59,48,63,67,36,37,114,137,128,132,131,135,134,3,133,130,118,141,139,138,140",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

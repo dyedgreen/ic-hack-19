@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorNightlyReleaseResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorNightlyReleaseResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/licensesdialog-1.8.3.aar/43247d9b9969274e3dc7db24ec2546cc/res/values-zh-rTW/strings.xml",

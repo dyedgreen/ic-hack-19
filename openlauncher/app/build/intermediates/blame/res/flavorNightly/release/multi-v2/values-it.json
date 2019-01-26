@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorNightlyReleaseResources/merged.dir/values-it/values-it.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorNightlyReleaseResources/merged.dir/values-it/values-it.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/values-it/values-it.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/values-it/strings.xml",
+                    "source": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/src/main/res/values-it/strings.xml",
                     "from": {
                         "startLines": "27,28,25,26,171,184,144,12,151,180,130,164,170,127,165,9,11,10,6,8,150,172,15,22,19,16,20,18,17,21,137,135,133,134,64,96,116,54,60,58,56,75,85,83,89,87,79,100,102,81,111,109,113,50,124,118,120,63,52,67,72,121,37,95,33,41,115,42,153,155,156,157,154,152,31,68,69,70,53,49,59,57,55,32,76,74,90,91,93,92,94,84,82,88,86,78,46,103,99,106,101,105,104,107,34,80,110,35,45,44,114,36,47,123,117,119,43,62,51,66,71,161,39,40,122,167,145,183,136,140,139,177,143,142,3,141,176,166,138,126,149,147,146,148,173",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

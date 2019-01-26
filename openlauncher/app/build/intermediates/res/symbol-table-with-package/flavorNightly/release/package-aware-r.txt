@@ -33,6 +33,9 @@ array entries__theme
 array values__zero_to_four
 array values__zero_to_one
 array values__zero_to_two
+attr DialogsListView
+attr MessageInput
+attr MessagesList
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -72,6 +75,8 @@ attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
 attr alertDialogTheme
+attr alignContent
+attr alignItems
 attr allowDividerAbove
 attr allowDividerAfterLastItem
 attr allowDividerBelow
@@ -83,6 +88,17 @@ attr alphabeticModifiers
 attr animationDuration
 attr arrowHeadLength
 attr arrowShaftLength
+attr attachmentButtonBackground
+attr attachmentButtonDefaultBgColor
+attr attachmentButtonDefaultBgDisabledColor
+attr attachmentButtonDefaultBgPressedColor
+attr attachmentButtonDefaultIconColor
+attr attachmentButtonDefaultIconDisabledColor
+attr attachmentButtonDefaultIconPressedColor
+attr attachmentButtonHeight
+attr attachmentButtonIcon
+attr attachmentButtonMargin
+attr attachmentButtonWidth
 attr autoCompleteTextViewStyle
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
@@ -172,20 +188,60 @@ attr counterOverflowTextAppearance
 attr counterTextAppearance
 attr currentPageIndicatorColor
 attr customNavigationLayout
+attr dateHeaderFormat
+attr dateHeaderPadding
+attr dateHeaderTextColor
+attr dateHeaderTextSize
+attr dateHeaderTextStyle
 attr defaultQueryHint
 attr defaultValue
+attr delayTypingStatus
 attr density
 attr dependency
+attr dialogAvatarHeight
+attr dialogAvatarWidth
+attr dialogDateColor
+attr dialogDateSize
+attr dialogDateStyle
+attr dialogDividerColor
+attr dialogDividerEnabled
+attr dialogDividerLeftPadding
+attr dialogDividerRightPadding
 attr dialogIcon
+attr dialogItemBackground
 attr dialogLayout
 attr dialogMessage
+attr dialogMessageAvatarEnabled
+attr dialogMessageAvatarHeight
+attr dialogMessageAvatarWidth
+attr dialogMessageTextColor
+attr dialogMessageTextSize
+attr dialogMessageTextStyle
 attr dialogPreferenceStyle
 attr dialogPreferredPadding
 attr dialogTheme
 attr dialogTitle
+attr dialogTitleTextColor
+attr dialogTitleTextSize
+attr dialogTitleTextStyle
+attr dialogUnreadBubbleBackgroundColor
+attr dialogUnreadBubbleEnabled
+attr dialogUnreadBubbleTextColor
+attr dialogUnreadBubbleTextSize
+attr dialogUnreadBubbleTextStyle
+attr dialogUnreadDateColor
+attr dialogUnreadDateStyle
+attr dialogUnreadItemBackground
+attr dialogUnreadMessageTextColor
+attr dialogUnreadMessageTextStyle
+attr dialogUnreadTitleTextColor
+attr dialogUnreadTitleTextStyle
 attr disableDependentsState
 attr displayOptions
 attr divider
+attr dividerDrawable
+attr dividerDrawableHorizontal
+attr dividerDrawableVertical
 attr dividerHorizontal
 attr dividerPadding
 attr dividerVertical
@@ -223,6 +279,8 @@ attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
+attr flexDirection
+attr flexWrap
 attr font
 attr fontFamily
 attr fontProviderAuthority
@@ -252,10 +310,52 @@ attr iconTintMode
 attr iconifiedByDefault
 attr imageButtonStyle
 attr inVerticalOrientation
+attr incomingAvatarHeight
+attr incomingAvatarWidth
+attr incomingBubbleDrawable
+attr incomingBubblePaddingBottom
+attr incomingBubblePaddingLeft
+attr incomingBubblePaddingRight
+attr incomingBubblePaddingTop
+attr incomingDefaultBubbleColor
+attr incomingDefaultBubblePressedColor
+attr incomingDefaultBubbleSelectedColor
+attr incomingDefaultImageOverlayPressedColor
+attr incomingDefaultImageOverlaySelectedColor
+attr incomingImageOverlayDrawable
+attr incomingImageTimeTextColor
+attr incomingImageTimeTextSize
+attr incomingImageTimeTextStyle
+attr incomingTextColor
+attr incomingTextLinkColor
+attr incomingTextSize
+attr incomingTextStyle
+attr incomingTimeTextColor
+attr incomingTimeTextSize
+attr incomingTimeTextStyle
 attr indeterminateProgressStyle
 attr initialActivityCount
 attr initialColor
 attr initialExpandedChildrenCount
+attr inputBackground
+attr inputButtonBackground
+attr inputButtonDefaultBgColor
+attr inputButtonDefaultBgDisabledColor
+attr inputButtonDefaultBgPressedColor
+attr inputButtonDefaultIconColor
+attr inputButtonDefaultIconDisabledColor
+attr inputButtonDefaultIconPressedColor
+attr inputButtonHeight
+attr inputButtonIcon
+attr inputButtonMargin
+attr inputButtonWidth
+attr inputCursorDrawable
+attr inputHint
+attr inputHintColor
+attr inputMaxLines
+attr inputText
+attr inputTextColor
+attr inputTextSize
 attr insetForeground
 attr isLightTheme
 attr itemBackground
@@ -263,10 +363,12 @@ attr itemIconTint
 attr itemPadding
 attr itemTextAppearance
 attr itemTextColor
+attr justifyContent
 attr key
 attr keylines
 attr layout
 attr layoutManager
+attr layout_alignSelf
 attr layout_anchor
 attr layout_anchorGravity
 attr layout_behavior
@@ -316,6 +418,9 @@ attr layout_constraintWidth_percent
 attr layout_dodgeInsetEdges
 attr layout_editor_absoluteX
 attr layout_editor_absoluteY
+attr layout_flexBasisPercent
+attr layout_flexGrow
+attr layout_flexShrink
 attr layout_goneMarginBottom
 attr layout_goneMarginEnd
 attr layout_goneMarginLeft
@@ -324,10 +429,16 @@ attr layout_goneMarginStart
 attr layout_goneMarginTop
 attr layout_insetEdge
 attr layout_keyline
+attr layout_maxHeight
+attr layout_maxWidth
+attr layout_minHeight
+attr layout_minWidth
 attr layout_optimizationLevel
+attr layout_order
 attr layout_parallaxFactor
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr layout_wrapBefore
 attr lightnessSlider
 attr lightnessSliderView
 attr listChoiceBackgroundIndicator
@@ -346,6 +457,7 @@ attr logoDescription
 attr maxActionInlineWidth
 attr maxButtonHeight
 attr maxHeight
+attr maxLine
 attr maxWidth
 attr md_background_color
 attr md_btn_negative_selector
@@ -415,6 +527,27 @@ attr nnf_toolbarTheme
 attr numericModifiers
 attr order
 attr orderingFromXml
+attr outcomingBubbleDrawable
+attr outcomingBubblePaddingBottom
+attr outcomingBubblePaddingLeft
+attr outcomingBubblePaddingRight
+attr outcomingBubblePaddingTop
+attr outcomingDefaultBubbleColor
+attr outcomingDefaultBubblePressedColor
+attr outcomingDefaultBubbleSelectedColor
+attr outcomingDefaultImageOverlayPressedColor
+attr outcomingDefaultImageOverlaySelectedColor
+attr outcomingImageOverlayDrawable
+attr outcomingImageTimeTextColor
+attr outcomingImageTimeTextSize
+attr outcomingImageTimeTextStyle
+attr outcomingTextColor
+attr outcomingTextLinkColor
+attr outcomingTextSize
+attr outcomingTextStyle
+attr outcomingTimeTextColor
+attr outcomingTimeTextSize
+attr outcomingTimeTextStyle
 attr overlapAnchor
 attr paddingBottomNoButtons
 attr paddingEnd
@@ -479,6 +612,10 @@ attr selectableItemBackground
 attr selectableItemBackgroundBorderless
 attr shouldDisableView
 attr showAsAction
+attr showAttachmentButton
+attr showDivider
+attr showDividerHorizontal
+attr showDividerVertical
 attr showDividers
 attr showSeekBarValue
 attr showText
@@ -540,6 +677,7 @@ attr textAppearancePopupMenuHeader
 attr textAppearanceSearchResultSubtitle
 attr textAppearanceSearchResultTitle
 attr textAppearanceSmallPopupMenu
+attr textAutoLink
 attr textColorAlertDialogListItem
 attr textColorError
 attr textColorSearchUrl
@@ -631,6 +769,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -646,7 +785,14 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color cornflower_blue_light_40
+color cornflower_blue_two
+color cornflower_blue_two_24
+color cornflower_blue_two_dark
 color darkTransparent
+color dark_gray
+color dark_grey_two
+color dark_mint
 color design_bottom_navigation_shadow_color
 color design_error
 color design_fab_shadow_end_color
@@ -658,6 +804,12 @@ color design_fab_stroke_top_inner_color
 color design_fab_stroke_top_outer_color
 color design_snackbar_background_color
 color design_tint_password_toggle
+color dialog_date_text
+color dialog_divider
+color dialog_message_text
+color dialog_title_text
+color dialog_unread_bubble
+color dialog_unread_text
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -665,6 +817,7 @@ color dim_foreground_material_light
 color error_color_material
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color introButton
@@ -720,7 +873,16 @@ color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
 color transparent
+color warm_grey
+color warm_grey_four
+color warm_grey_three
+color warm_grey_two
 color white
+color white60
+color white_five
+color white_four
+color white_three
+color white_two
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -858,6 +1020,16 @@ dimen design_tab_max_width
 dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
+dimen dialog_avatar_height
+dimen dialog_avatar_width
+dimen dialog_date_text_size
+dimen dialog_divider_margin_left
+dimen dialog_divider_margin_right
+dimen dialog_last_message_avatar_height
+dimen dialog_last_message_avatar_width
+dimen dialog_message_text_size
+dimen dialog_title_text_size
+dimen dialog_unread_bubble_text_size
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen fab_margin
@@ -871,6 +1043,14 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
+dimen input_button_height
+dimen input_button_margin
+dimen input_button_width
+dimen input_padding_bottom
+dimen input_padding_left
+dimen input_padding_right
+dimen input_padding_top
+dimen input_text_size
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -910,6 +1090,19 @@ dimen md_simplelistitem_padding_top
 dimen md_title_frame_margin_bottom
 dimen md_title_frame_margin_bottom_less
 dimen md_title_textsize
+dimen message_avatar_height
+dimen message_avatar_width
+dimen message_bubble_corners_radius
+dimen message_date_header_padding
+dimen message_date_header_text_size
+dimen message_incoming_bubble_margin_right
+dimen message_outcoming_bubble_margin_left
+dimen message_padding_bottom
+dimen message_padding_left
+dimen message_padding_right
+dimen message_padding_top
+dimen message_text_size
+dimen message_time_text_size
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -1025,6 +1218,7 @@ drawable action_new_page
 drawable action_scale_widget
 drawable avd_hide_password
 drawable avd_show_password
+drawable bubble_circle
 drawable button_background
 drawable customactivityoncrash_error_image
 drawable design_bottom_navigation_item_background
@@ -1033,6 +1227,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add_attachment
 drawable ic_android
 drawable ic_android_minimal
 drawable ic_apps_dark_24dp
@@ -1080,6 +1275,7 @@ drawable ic_person_black_24dp
 drawable ic_photo_black_24dp
 drawable ic_previous
 drawable ic_search_light_24dp
+drawable ic_send
 drawable ic_settings_applications_black_24dp
 drawable ic_settings_black_24dp
 drawable ic_settings_launcher_black_24dp
@@ -1097,6 +1293,8 @@ drawable indicator_ltr
 drawable intro_2
 drawable intro_3
 drawable intro_4
+drawable mask
+drawable mask_active
 drawable md_btn_selected
 drawable md_btn_selected_dark
 drawable md_btn_selector
@@ -1130,6 +1328,8 @@ drawable ol_loading_1
 drawable ol_loading_2
 drawable ol_loading_3
 drawable preference_list_divider_material
+drawable shape_incoming_message
+drawable shape_outcoming_message
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1174,13 +1374,18 @@ id app_bar
 id app_grid
 id app_widget_host
 id async
+id attachmentButton
+id attachmentButtonSpace
 id auto
 id avatar
 id background_frame
 id barrier
+id baseline
 id beginning
 id blocking
+id bold
 id bottom
+id bubble
 id buttonPanel
 id button_back
 id button_message
@@ -1200,6 +1405,8 @@ id clip_vertical
 id clockText
 id collapseActionView
 id color_indicator
+id column
+id column_reverse
 id container
 id contentPanel
 id coordinator
@@ -1221,6 +1428,16 @@ id design_navigation_view
 id desktop
 id desktopIndicator
 id desktop_option
+id dialogAvatar
+id dialogContainer
+id dialogDate
+id dialogDivider
+id dialogDividerContainer
+id dialogLastMessage
+id dialogLastMessageUserAvatar
+id dialogName
+id dialogRootLayout
+id dialogUnreadBubble
 id dimensions
 id direct
 id disableHome
@@ -1231,6 +1448,7 @@ id dynamic
 id editIcon
 id edit_query
 id edit_text
+id email
 id enableSwitch
 id end
 id end_padder
@@ -1246,6 +1464,8 @@ id fill
 id fill_horizontal
 id fill_vertical
 id fixed
+id flex_end
+id flex_start
 id forever
 id fragment
 id fragment_holder
@@ -1268,6 +1488,7 @@ id id_adapter_icon_label_item
 id id_adapter_popup_icon_label_item
 id ifRoom
 id image
+id imageOverlay
 id imageView2
 id image_preview
 id image_slide
@@ -1292,6 +1513,7 @@ id line3
 id list
 id listMode
 id list_item
+id map
 id masked
 id md_buttonDefaultNegative
 id md_buttonDefaultNeutral
@@ -1311,6 +1533,11 @@ id md_title
 id md_titleFrame
 id media_actions
 id message
+id messageInput
+id messageSendButton
+id messageText
+id messageTime
+id messageUserAvatar
 id middle
 id mini
 id minibar
@@ -1337,12 +1564,14 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nowrap
 id packed
 id parallax
 id parent
 id parentPanel
 id parent_matrix
 id percent
+id phone
 id pin
 id progress_bar
 id progress_circular
@@ -1357,6 +1586,8 @@ id right
 id rightDragHandle
 id right_icon
 id right_side
+id row
+id row_reverse
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1381,6 +1612,7 @@ id search_voice_btn
 id seekbar
 id seekbar_value
 id select_dialog_listview
+id sendButtonSpace
 id shortcut
 id showCustom
 id showHome
@@ -1391,6 +1623,9 @@ id smallLabel
 id snackbar_action
 id snackbar_text
 id snap
+id space_around
+id space_between
+id space_evenly
 id spacer
 id spinner
 id split_action_bar
@@ -1403,6 +1638,7 @@ id standard
 id start
 id status_bar_latest_event_content
 id status_frame
+id stretch
 id submenuarrow
 id submit_area
 id swipeable_view_pager
@@ -1449,9 +1685,11 @@ id view_offset_helper
 id view_pager_slides
 id viewpager
 id visible
+id web
 id withText
 id wrap
 id wrap_content
+id wrap_reverse
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1518,10 +1756,16 @@ layout empty_fragment_slide
 layout expand_button
 layout fragment_slide
 layout item_app
+layout item_date_header
+layout item_dialog
 layout item_edit_minibar
 layout item_hide_apps
 layout item_icon_label
+layout item_incoming_image_message
+layout item_incoming_text_message
 layout item_minibar
+layout item_outcoming_image_message
+layout item_outcoming_text_message
 layout item_popup_icon_label
 layout md_dialog_basic
 layout md_dialog_basic_check
@@ -1596,6 +1840,7 @@ layout view_drawer_indicator
 layout view_group_popup
 layout view_home
 layout view_intro
+layout view_message_input
 layout view_search_clock
 layout view_widget_container
 menu picker_actions
@@ -1720,6 +1965,7 @@ string edit
 string enable
 string expand_button_title
 string fastadapter_lib_version
+string font_fontFamily_medium
 string grant_permissions
 string help
 string help_this_app
@@ -2197,6 +2443,15 @@ style Base_Widget_Design_TabLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style ChatHeaderLayout
+style ChatHeaderTitle
+style ChatInputEditText
+style ChatMessageInfo
+style ChatMessageLayoutIncoming
+style ChatMessageLayoutOutcoming
+style ChatSendButton
+style ChatTheme
+style ChatWhoIsTyping
 style ColoredButton
 style FilePickerTheme
 style Home_Light
@@ -2500,7 +2755,10 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle textColorError
 styleable DialogPreference android_dialogTitle android_dialogMessage android_dialogIcon android_positiveButtonText android_negativeButtonText android_dialogLayout dialogIcon dialogLayout dialogMessage dialogTitle negativeButtonText positiveButtonText
+styleable DialogsList dialogAvatarHeight dialogAvatarWidth dialogDateColor dialogDateSize dialogDateStyle dialogDividerColor dialogDividerEnabled dialogDividerLeftPadding dialogDividerRightPadding dialogItemBackground dialogMessageAvatarEnabled dialogMessageAvatarHeight dialogMessageAvatarWidth dialogMessageTextColor dialogMessageTextSize dialogMessageTextStyle dialogTitleTextColor dialogTitleTextSize dialogTitleTextStyle dialogUnreadBubbleBackgroundColor dialogUnreadBubbleEnabled dialogUnreadBubbleTextColor dialogUnreadBubbleTextSize dialogUnreadBubbleTextStyle dialogUnreadDateColor dialogUnreadDateStyle dialogUnreadItemBackground dialogUnreadMessageTextColor dialogUnreadMessageTextStyle dialogUnreadTitleTextColor dialogUnreadTitleTextStyle
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
+styleable FlexboxLayout alignContent alignItems dividerDrawable dividerDrawableHorizontal dividerDrawableVertical flexDirection flexWrap justifyContent maxLine showDivider showDividerHorizontal showDividerVertical
+styleable FlexboxLayout_Layout layout_alignSelf layout_flexBasisPercent layout_flexGrow layout_flexShrink layout_maxHeight layout_maxWidth layout_minHeight layout_minWidth layout_order layout_wrapBefore
 styleable FloatingActionButton backgroundTint backgroundTintMode borderWidth elevation fabCustomSize fabSize pressedTranslationZ rippleColor useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
@@ -2518,6 +2776,8 @@ styleable MaterialScrollBar msb_barColour msb_barThickness msb_handleColour msb_
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
+styleable MessageInput attachmentButtonBackground attachmentButtonDefaultBgColor attachmentButtonDefaultBgDisabledColor attachmentButtonDefaultBgPressedColor attachmentButtonDefaultIconColor attachmentButtonDefaultIconDisabledColor attachmentButtonDefaultIconPressedColor attachmentButtonHeight attachmentButtonIcon attachmentButtonMargin attachmentButtonWidth delayTypingStatus inputBackground inputButtonBackground inputButtonDefaultBgColor inputButtonDefaultBgDisabledColor inputButtonDefaultBgPressedColor inputButtonDefaultIconColor inputButtonDefaultIconDisabledColor inputButtonDefaultIconPressedColor inputButtonHeight inputButtonIcon inputButtonMargin inputButtonWidth inputCursorDrawable inputHint inputHintColor inputMaxLines inputText inputTextColor inputTextSize showAttachmentButton
+styleable MessagesList dateHeaderFormat dateHeaderPadding dateHeaderTextColor dateHeaderTextSize dateHeaderTextStyle incomingAvatarHeight incomingAvatarWidth incomingBubbleDrawable incomingBubblePaddingBottom incomingBubblePaddingLeft incomingBubblePaddingRight incomingBubblePaddingTop incomingDefaultBubbleColor incomingDefaultBubblePressedColor incomingDefaultBubbleSelectedColor incomingDefaultImageOverlayPressedColor incomingDefaultImageOverlaySelectedColor incomingImageOverlayDrawable incomingImageTimeTextColor incomingImageTimeTextSize incomingImageTimeTextStyle incomingTextColor incomingTextLinkColor incomingTextSize incomingTextStyle incomingTimeTextColor incomingTimeTextSize incomingTimeTextStyle outcomingBubbleDrawable outcomingBubblePaddingBottom outcomingBubblePaddingLeft outcomingBubblePaddingRight outcomingBubblePaddingTop outcomingDefaultBubbleColor outcomingDefaultBubblePressedColor outcomingDefaultBubbleSelectedColor outcomingDefaultImageOverlayPressedColor outcomingDefaultImageOverlaySelectedColor outcomingImageOverlayDrawable outcomingImageTimeTextColor outcomingImageTimeTextSize outcomingImageTimeTextStyle outcomingTextColor outcomingTextLinkColor outcomingTextSize outcomingTextStyle outcomingTimeTextColor outcomingTimeTextSize outcomingTimeTextStyle textAutoLink
 styleable MultiSelectListPreference android_entries android_entryValues entries entryValues
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemIconTint itemTextAppearance itemTextColor menu
 styleable ParallaxLayout_Layout layout_parallaxFactor

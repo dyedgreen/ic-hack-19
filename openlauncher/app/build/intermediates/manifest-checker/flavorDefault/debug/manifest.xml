@@ -92,13 +92,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.stfalcon.chatkit.sample.features.main.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+            android:name="com.benny.openlauncher.chatbot.features.demo.def.DefaultMessagesActivity"
+            android:theme="@style/BlueTheme" />
 
         <receiver
             android:name="com.benny.openlauncher.receivers.DeviceAdminReceiver"

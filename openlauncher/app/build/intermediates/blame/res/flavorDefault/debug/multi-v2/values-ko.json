@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Bargavi C\\ic-hack-19\\openlauncher\\app\\build\\intermediates\\incremental\\mergeFlavorDefaultDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\licensesdialog-1.8.3.aar\\9af9f9de327af36fba8cf80578b104aa\\res\\values-ko\\strings.xml",
-                    "from": {
-                        "startLines": "19,18",
-                        "startColumns": "4,4",
-                        "startOffsets": "770,717",
-                        "endColumns": "44,51",
-                        "endOffsets": "810,764"
-                    },
-                    "to": {
-                        "startLines": "19,20",
-                        "startColumns": "4,4",
-                        "startOffsets": "1746,1791",
-                        "endColumns": "44,51",
-                        "endOffsets": "1786,1838"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\3a3ffa420483930a9dbb895aca4987f2\\res\\values-ko\\values-ko.xml",
+                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bargavi C\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\f73ca1f4226c0e423fb78154b515e9dc\\res\\values-ko\\values-ko.xml",
+                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/licensesdialog-1.8.3.aar/43247d9b9969274e3dc7db24ec2546cc/res/values-ko/strings.xml",
+                    "from": {
+                        "startLines": "19,18",
+                        "startColumns": "4,4",
+                        "startOffsets": "770,717",
+                        "endColumns": "44,51",
+                        "endOffsets": "810,764"
+                    },
+                    "to": {
+                        "startLines": "19,20",
+                        "startColumns": "4,4",
+                        "startOffsets": "1746,1791",
+                        "endColumns": "44,51",
+                        "endOffsets": "1786,1838"
+                    }
+                },
+                {
+                    "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/619627ac1eaa25771cba2ee8956ed914/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

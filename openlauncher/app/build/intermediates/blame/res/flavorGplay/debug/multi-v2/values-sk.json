@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorGplayDebugResources/merged.dir/values-sk/values-sk.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorGplayDebugResources/merged.dir/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/619627ac1eaa25771cba2ee8956ed914/res/values-sk/values-sk.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/values-sk/strings.xml",
+                    "source": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/src/main/res/values-sk/strings.xml",
                     "from": {
                         "startLines": "26,27,24,25,169,196,219,183,182,194,199,187,143,208,205,186,207,11,150,178,129,209,162,184,193,200,168,126,163,8,10,9,6,7,198,185,149,170,14,21,18,15,19,17,220,16,20,218,215,213,216,214,211,217,189,197,204,195,212,136,134,190,132,133,64,95,115,54,60,58,56,74,84,82,88,86,78,99,101,80,110,108,112,50,123,117,119,63,52,66,71,120,37,94,33,41,114,42,152,154,155,156,153,151,31,67,68,69,53,49,59,57,55,32,75,73,89,90,92,91,93,83,81,87,85,77,46,102,98,105,100,104,103,106,34,79,109,35,45,44,113,36,47,122,116,118,43,62,51,65,70,159,39,40,121,203,202,206,191,165,144,181,135,139,138,201,175,142,141,3,140,174,192,164,137,125,148,146,145,147,171",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

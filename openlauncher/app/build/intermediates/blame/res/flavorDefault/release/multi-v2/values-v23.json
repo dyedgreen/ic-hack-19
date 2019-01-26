@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultReleaseResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultReleaseResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/6505e6c6b9480e77dcc40aca887ec2c6/res/values-v23/values-v23.xml",

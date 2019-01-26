@@ -34,6 +34,8 @@ import com.benny.openlauncher.activity.homeparts.HpDesktopPickAction;
 import com.benny.openlauncher.activity.homeparts.HpDragOption;
 import com.benny.openlauncher.activity.homeparts.HpInitSetup;
 import com.benny.openlauncher.activity.homeparts.HpSearchBar;
+import com.benny.openlauncher.chatbot.features.demo.def.DefaultMessagesActivity;
+import com.benny.openlauncher.chatbot.features.demo.def.DemoMessagesActivity;
 import com.benny.openlauncher.interfaces.AppDeleteListener;
 import com.benny.openlauncher.interfaces.AppUpdateListener;
 import com.benny.openlauncher.manager.Setup;
@@ -342,12 +344,10 @@ public final class HomeActivity extends Activity implements OnDesktopEditListene
             LauncherAction.RunAction(Action.LauncherSettings, context);
         } else {
             try {
-                Intent intent = Tool.getIntentFromApp(app);
-                Intent chatIntent = new Intent();
-                chatIntent.setClassName("com.stfalcon.chatkit.sample", "com.stfalcon.chatkit.sample.features.main.MainActivity");
-                //context.startActivity(chatIntent);
-
-                context.startActivity(chatIntent, getActivityAnimationOpts(view));
+//                Intent intent = Tool.getIntentFromApp(app);
+//                context.startActivity(intent, getActivityAnimationOpts(view));
+                Intent intent = new Intent(this, DefaultMessagesActivity.class);
+                context.startActivity(intent);
                 // close app drawer and other items in advance
                 // annoying to wait for app drawer to close
                 handleLauncherResume();

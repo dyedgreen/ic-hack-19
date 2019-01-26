@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultReleaseResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultReleaseResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/619627ac1eaa25771cba2ee8956ed914/res/values-mk/values-mk.xml",

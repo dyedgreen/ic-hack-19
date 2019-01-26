@@ -82,7 +82,12 @@ android {
     }
 }
 
+ext {
+    picassoVersion = '2.5.2'
+}
 dependencies {
+
+    implementation project(':chatkit')
     // Support libraries
     implementation "com.android.support:recyclerview-v7:${version_library_appcompat}"
     implementation "com.android.support:appcompat-v7:${version_library_appcompat}"
@@ -112,6 +117,8 @@ dependencies {
     implementation('com.github.turing-tech:MaterialScrollBar:12.4.0') {
         exclude group: 'com.android.support'
     }
+    //Picasso
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
 
     // Tools
     implementation "com.jakewharton:butterknife:${version_library_butterknife}"
