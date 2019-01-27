@@ -32,7 +32,21 @@ function switcher() {
         chrome.storage.sync.set({db: db});
     });
     checkbox.checked;
-    // location.reload();
+    location.reload();
+}
+
+function show_full_history(e) {
+    e.preventDefault();
+    chrome.storage.sync.get("token", function(data) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", server+"/login/"+data.token, true);
+        xhttp.send();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                chrome.tabs.create({ url: server+"/app/"+host });
+            }
+        }
+    });
 }
 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -58,10 +72,10 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                 access_info.innerHTML = "No data available on this website for today."
                 stats.appendChild(access_info)
             }
-            link = document.createElement("a");
+            link = document.createElement("p");
+            link.id = "full-history";
             link.innerHTML = "Show full history online!";
-            link.href = server+"/app/"+host;
-            link.target = "_blank";
+            link.onclick = show_full_history;
             stats.appendChild(link);
         } else {
             access_info = document.createElement("p");

@@ -69,6 +69,20 @@ button {
     margin: 10px 5%;
 }
 
+#view-history {
+    color: #585858;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+    transition: color 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#view-history:hover {
+    color: #838383;
+}
+
 #toasts {
     position: fixed;
     bottom: 0;

@@ -24,12 +24,14 @@ body {
     margin-top: -3px;
 }
 
-a {
+#full-history {
     color: whitesmoke;
     font-weight: bold;
     transition: color 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-a:hover {
+#full-history:hover {
     color: #eee;
 }

@@ -151,6 +151,20 @@ function change_password_keydown(e) {
     }
 }
 
+function view_history_handler(e) {
+    e.preventDefault();
+    chrome.storage.sync.get("token", function(data) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", server+"/login/"+data.token, true);
+        xhttp.send();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                chrome.tabs.create({ url: server+"/login" });
+            }
+        }
+    });
+}
+
 logo = document.createElement("img")
 logo.src = chrome.runtime.getURL("images/brand.png")
 logo.id = "logo"
@@ -163,7 +177,7 @@ function build_view() {
             container.appendChild(logo)
 
             login_message = document.createElement("p");
-            login_message.innerHTML = "Login to <b>Why?</b> to store your answers and history!";
+            login_message.innerHTML = "Login to <b>Why?</b> to store your answer history and sync between devices!";
             container.appendChild(login_message);
 
             username = document.createElement("input");
@@ -228,6 +242,12 @@ function build_view() {
             change_password.innerHTML = "Change password";
             change_password.onclick = change_password_request;
             container.appendChild(change_password);
+
+            view_history = document.createElement("p");
+            view_history.innerHTML = "View your answer history online!";
+            view_history.id = "view-history";
+            view_history.onclick = view_history_handler;
+            container.appendChild(view_history);
         }
     });
 }
