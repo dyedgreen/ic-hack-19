@@ -34,6 +34,8 @@ def logout(token):
         pass
 
 def update_password(username, password, new_password):
+    if len(new_password) < 6:
+        raise ValueError("The password has to be at least 6 characters long")
     user = u.User(username)
     if not user.authenticate(password):
         raise ValueError("Invalid password")
