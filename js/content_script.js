@@ -21,10 +21,6 @@ function saveResponse() {
     r_input.blur()
     reply.classList.remove("why--reply-box")
     send.classList.add("why--sent")
-    message1 = new MessageBox("from", "Ok, thanks!");
-    message1.div.style.animationName = "fade-in"
-    message1.div.style.animationDuration = "0.5s"
-    chat_window.appendChild(message1.div);
 
     chrome.storage.sync.get(["db", "token"], function(data) {
         db = data.db;
@@ -34,9 +30,25 @@ function saveResponse() {
         xhttp.open("POST", server+"/api/app/"+host+"/reasons/add", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send("token="+data.token+"&reason="+r_input.value);
+        setTimeout(function() {
+            if (typeof document.getElementById("why--fallback-reply") == "undefined") {
+                message1 = new MessageBox("from", "Ok, thanks!");
+                message1.div.style.animationName = "fade-in"
+                message1.div.style.animationDuration = "0.5s"
+                chat_window.appendChild(message1.div);
+            }
+        }, 500)
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
-                console.log(this);
+                let res = JSON.parse(this.responseText);
+                console.log(res)
+                if (typeof res === "object" && res["error"] === false) {
+                    message1 = new MessageBox("from", res["reply"]);
+                    message1.id = "why--fallback-reply";
+                    message1.div.style.animationName = "fade-in"
+                    message1.div.style.animationDuration = "0.5s"
+                    chat_window.appendChild(message1.div);
+                }
             }
         }
     });
@@ -46,7 +58,7 @@ function saveResponse() {
         setTimeout(function() {
             container.style.display = "none";
         }, 500)
-    }, 1000);
+    }, 2000);
 }
 
 function ask() {
