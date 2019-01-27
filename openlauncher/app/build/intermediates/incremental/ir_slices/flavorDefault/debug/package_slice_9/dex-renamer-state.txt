@@ -1,4 +1,4 @@
-#Sun Jan 27 01:26:00 GMT 2019
+#Sun Jan 27 04:22:59 GMT 2019
 base.0=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/transforms/dexMerger/flavorDefault/debug/9
 path.0=classes.dex
 renamed.0=classes.dex

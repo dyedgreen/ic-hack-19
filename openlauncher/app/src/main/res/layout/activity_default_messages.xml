@@ -25,12 +25,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:inputHint="@string/hint_enter_a_message"/>
-  <ImageView
-    android:id="@+id/app_icon_view"
-    android:layout_width="215dp"
-    android:layout_height="184dp"
-    android:layout_marginEnd="196dp"
-    android:layout_alignEnd="@+id/messagesList"
-    app:srcCompat="@drawable/bubble_circle"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/app_icon_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:paddingTop="80dp"
+      app:srcCompat="@drawable/bubble_circle"/>
+  </RelativeLayout>
 
 </RelativeLayout>

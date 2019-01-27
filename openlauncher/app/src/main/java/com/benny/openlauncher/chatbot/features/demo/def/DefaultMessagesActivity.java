@@ -19,6 +19,7 @@ import com.benny.openlauncher.model.App;
 import com.stfalcon.chatkit.messages.MessageInput;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
+import java.util.ArrayList;
 
 public class DefaultMessagesActivity extends DemoMessagesActivity
     implements MessageInput.InputListener,
@@ -29,11 +30,15 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
   }
 
   private MessagesList messagesList;
+  private String app_package_name;
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_default_messages);
+
+    super.messages = new ArrayList<>();
 
     this.messagesList = (MessagesList) findViewById(R.id.messagesList);
     initAdapter();
@@ -44,6 +49,7 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
 
     Bundle bundle = getIntent().getExtras();
     String app_package_name = bundle.getString("app_package_name");
+    this.app_package_name = app_package_name;
     try
     {
       ImageView app_icon_view = findViewById(R.id.app_icon_view);
@@ -53,17 +59,20 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
     catch (PackageManager.NameNotFoundException e) {
       e.printStackTrace();
     }
+
+    User conscience = new User("1", "Your conscience", "https://cdn4.iconfinder.com/data/icons/smashicons-movies-flat/58/17_-_Yoda_Flat-512.png", true);
+    super.messagesAdapter.addToStart(new Message("Why?", conscience, "Why?"), true);
   }
 
   @Override
   public boolean onSubmit(CharSequence input) {
-    super.messagesAdapter.addToStart(new Message(input.toString(), new User("hi", "hi", "hi", true), input.toString()), true);
+    Message newMessage = new Message(input.toString(), new User("0", "hi", "", true), input.toString());
+    super.messagesAdapter.addToStart(newMessage, true);
+    Intent originalApp = getPackageManager().getLaunchIntentForPackage(app_package_name);
+    originalApp.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    startActivity(originalApp);
+    finish();
     return true;
-  }
-
-  public void setIcon(Drawable icon) {
-
-
   }
 
   private void initAdapter() {
@@ -71,14 +80,9 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
     super.messagesAdapter.enableSelectionMode(this);
     super.messagesAdapter.setLoadMoreListener(this);
     super.messagesAdapter.registerViewClickListener(R.id.messageUserAvatar,
-        new MessagesListAdapter.OnMessageViewClickListener<Message>() {
-          @Override
-          public void onMessageViewClick(View view, Message message) {
-            AppUtils.showToast(DefaultMessagesActivity.this,
-                message.getUser().getName() + " avatar click",
-                false);
-          }
-        });
+        (view, message) -> AppUtils.showToast(DefaultMessagesActivity.this,
+            "Listen to your conscience",
+            false));
     this.messagesList.setAdapter(super.messagesAdapter);
   }
 

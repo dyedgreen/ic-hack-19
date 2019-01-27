@@ -38,16 +38,12 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
   private int selectionCount;
   private Date lastLoadedDate;
 
+  ArrayList<Message> messages;
+
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-
-    imageLoader = new ImageLoader() {
-      @Override
-      public void loadImage(ImageView imageView, String url, Object payload) {
-        Picasso.with(DemoMessagesActivity.this).load(url).into(imageView);
-      }
-    };
+    imageLoader = (imageView, url, payload) -> Picasso.with(DemoMessagesActivity.this).load(url).into(imageView);
   }
 
   @Override
@@ -89,9 +85,9 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
   @Override
   public void onLoadMore(int page, int totalItemsCount) {
     Log.i("TAG", "onLoadMore: " + page + " " + totalItemsCount);
-//    if (totalItemsCount < TOTAL_MESSAGES_COUNT) {
-//      loadMessages();
-//    }
+    if (totalItemsCount < TOTAL_MESSAGES_COUNT) {
+      loadMessages();
+    }
   }
 
   @Override
@@ -105,26 +101,22 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
 //    new Handler().postDelayed(new Runnable() { //imitation of internet connection
 //      @Override
 //      public void run() {
-//        ArrayList<Message> messages = ;
-//        lastLoadedDate = messages.get(messages.size() - 1).getCreatedAt();
-//        messagesAdapter.addToEnd(messages, false);
+////        lastLoadedDate = messages.get(messages.size() - 1).getCreatedAt();
+////        messagesAdapter.addToEnd(messages, false);
 //      }
 //    }, 1000);
   }
 
   private MessagesListAdapter.Formatter<Message> getMessageStringFormatter() {
-    return new MessagesListAdapter.Formatter<Message>() {
-      @Override
-      public String format(Message message) {
-        String createdAt = new SimpleDateFormat("MMM d, EEE 'at' h:mm a", Locale.getDefault())
-            .format(message.getCreatedAt());
+    return message -> {
+      String createdAt = new SimpleDateFormat("MMM d, EEE 'at' h:mm a", Locale.getDefault())
+          .format(message.getCreatedAt());
 
-        String text = message.getText();
-        if (text == null) text = "[attachment]";
+      String text = message.getText();
+      if (text == null) text = "[attachment]";
 
-        return String.format(Locale.getDefault(), "%s: %s (%s)",
-            message.getUser().getName(), text, createdAt);
-      }
+      return String.format(Locale.getDefault(), "%s: %s (%s)",
+          message.getUser().getName(), text, createdAt);
     };
   }
 }

@@ -568,6 +568,10 @@
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/anim/abc_slide_out_bottom.xml"
     },
     {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_imgview_pentagon.svg.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/0b544770825ee30aa8bce396a22112bd/res/raw/imgview_pentagon.svg"
+    },
+    {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-hdpi-v4_mask.png.flat",
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/chatkit/build/intermediates/packaged_res/debug/drawable-hdpi-v4/mask.png"
     },
@@ -936,6 +940,10 @@
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_imgview_star.svg.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/0b544770825ee30aa8bce396a22112bd/res/raw/imgview_star.svg"
+    },
+    {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -974,10 +982,6 @@
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-ldpi_ic_android_minimal.png.flat",
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/generated/res/pngs/flavorDefault/debug/drawable-ldpi/ic_android_minimal.png"
-    },
-    {
-        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/layout_activity_default_dialogs.xml.flat",
-        "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/layout/activity_default_dialogs.xml"
     },
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-hdpi_ic_launch_white_36dp.png.flat",
@@ -2148,6 +2152,10 @@
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/licensesdialog-1.8.3.aar/43247d9b9969274e3dc7db24ec2546cc/res/raw/lgpl_21_full.txt"
     },
     {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable_white_radius.xml.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/circleindicator-1.2.2.aar/e799dbdd5f3b3b9046bca0d239811d39/res/drawable/white_radius.xml"
+    },
+    {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-xhdpi-v4_ic_previous.png.flat",
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/material-intro-screen-0.0.5.aar/4451fa80a35e2fb99569f95b66d2aff9/res/drawable-xhdpi-v4/ic_previous.png"
     },
@@ -2482,6 +2490,10 @@
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-anydpi-v21_ic_view_list_white_24dp.xml.flat",
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/generated/res/pngs/flavorDefault/debug/drawable-anydpi-v21/ic_view_list_white_24dp.xml"
+    },
+    {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/animator_scale_with_alpha.xml.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/circleindicator-1.2.2.aar/e799dbdd5f3b3b9046bca0d239811d39/res/animator/scale_with_alpha.xml"
     },
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -2920,6 +2932,10 @@
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/layout/view_app_drawer_page.xml"
     },
     {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_imgview_octogon.svg.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/0b544770825ee30aa8bce396a22112bd/res/raw/imgview_octogon.svg"
+    },
+    {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-ldpi_ic_edit_black_24dp.png.flat",
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/generated/res/pngs/flavorDefault/debug/drawable-ldpi/ic_edit_black_24dp.png"
     },
@@ -2986,6 +3002,10 @@
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-xxhdpi_ic_mode_edit_black_24dp.png.flat",
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/generated/res/pngs/flavorDefault/debug/drawable-xxhdpi/ic_mode_edit_black_24dp.png"
+    },
+    {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_imgview_hexagon.svg.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/0b544770825ee30aa8bce396a22112bd/res/raw/imgview_hexagon.svg"
     },
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable_abc_list_selector_holo_light.xml.flat",
@@ -3394,6 +3414,10 @@
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c872164ef23b7d07523e9782904080de/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_imgview_heart.svg.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/0b544770825ee30aa8bce396a22112bd/res/raw/imgview_heart.svg"
     },
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-xhdpi_ic_close_dark_24dp.png.flat",
@@ -3982,6 +4006,10 @@
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_epl_v10_full.txt.flat",
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/licensesdialog-1.8.3.aar/43247d9b9969274e3dc7db24ec2546cc/res/raw/epl_v10_full.txt"
+    },
+    {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/raw_imgview_diamond.svg.flat",
+        "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/0b544770825ee30aa8bce396a22112bd/res/raw/imgview_diamond.svg"
     },
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
