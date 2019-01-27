@@ -36,8 +36,6 @@ def login():
 
 @app.route("/login/<string:token>", methods=["POST", "GET"])
 def login_token(token):
-    if f.session.get("token"):
-        return "", 204
     try:
         why.user_api.is_logged_in(token)
         f.session["token"] = token
