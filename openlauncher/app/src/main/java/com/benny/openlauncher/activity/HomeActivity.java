@@ -1,6 +1,5 @@
 package com.benny.openlauncher.activity;
 
-import android.app.Activity;
 import android.app.ActivityOptions;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProviderInfo;
@@ -9,6 +8,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Point;
 import android.net.Uri;
@@ -18,6 +18,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -34,6 +35,7 @@ import com.benny.openlauncher.activity.homeparts.HpDesktopPickAction;
 import com.benny.openlauncher.activity.homeparts.HpDragOption;
 import com.benny.openlauncher.activity.homeparts.HpInitSetup;
 import com.benny.openlauncher.activity.homeparts.HpSearchBar;
+import com.benny.openlauncher.chatbot.WhyLogin;
 import com.benny.openlauncher.chatbot.features.demo.def.DefaultMessagesActivity;
 import com.benny.openlauncher.interfaces.AppDeleteListener;
 import com.benny.openlauncher.interfaces.AppUpdateListener;
@@ -72,7 +74,7 @@ import net.gsantner.opoc.util.ContextUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class HomeActivity extends Activity implements OnDesktopEditListener, DesktopOptionViewListener {
+public final class HomeActivity extends AppCompatActivity implements OnDesktopEditListener, DesktopOptionViewListener {
     public static final Companion Companion = new Companion();
     public static final int REQUEST_CREATE_APPWIDGET = 0x6475;
     public static final int REQUEST_PERMISSION_STORAGE = 0x3648;
@@ -95,6 +97,7 @@ public final class HomeActivity extends Activity implements OnDesktopEditListene
     private ShortcutReceiver _shortcutReceiver;
     private BroadcastReceiver _timeChangedReceiver;
 
+    // login variable for why-launcher
     private int cx;
     private int cy;
 
@@ -343,11 +346,18 @@ public final class HomeActivity extends Activity implements OnDesktopEditListene
             LauncherAction.RunAction(Action.LauncherSettings, context);
         } else {
             try {
-//                Intent intent = Tool.getIntentFromApp(app);
-//                context.startActivity(intent, getActivityAnimationOpts(view));
+              SharedPreferences sharedPreferences = context.getSharedPreferences("why.launcher.token", Context.MODE_PRIVATE);
+              String token = sharedPreferences.getString("token", "");
+//              if (token.equals("")) {
+//                Intent intent = new Intent(this, WhyLogin.class);
+//                context.startActivity(intent);
+//              }
+//              else {
                 Intent intent = new Intent(this, DefaultMessagesActivity.class);
                 intent.putExtra("app_package_name", app.getPackageName());
+                intent.putExtra("app_name", app.getLabel());
                 context.startActivity(intent);
+//              }
 
               // close app drawer and other items in advance
                 // annoying to wait for app drawer to close

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jan 27 04:32:36 GMT 2019
+#Sun Jan 27 08:37:32 GMT 2019
 2.base=/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/merged_assets/flavorDefaultDebug/mergeFlavorDefaultDebugAssets/out
 5.set=ASSET
 0.path=RobotoCondensed-Bold.ttf

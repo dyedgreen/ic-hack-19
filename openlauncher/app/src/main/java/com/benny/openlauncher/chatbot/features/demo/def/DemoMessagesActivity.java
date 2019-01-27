@@ -1,8 +1,10 @@
 package com.benny.openlauncher.chatbot.features.demo.def;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -41,7 +43,7 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
   ArrayList<Message> messages;
 
   @Override
-  protected void onCreate(@Nullable Bundle savedInstanceState) {
+  public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     imageLoader = (imageView, url, payload) -> Picasso.with(DemoMessagesActivity.this).load(url).into(imageView);
   }
@@ -67,7 +69,7 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
         break;
       case R.id.action_copy:
         messagesAdapter.copySelectedMessagesText(this, getMessageStringFormatter(), true);
-        AppUtils.showToast(this, R.string.copied_message, true);
+//        AppUtils.showToast(this, R.string.copied_message, true);
         break;
     }
     return true;

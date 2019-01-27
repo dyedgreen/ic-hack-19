@@ -1608,6 +1608,10 @@
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/generated/res/pngs/flavorDefault/debug/drawable-hdpi/ic_dock_dark_24dp.png"
     },
     {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/layout_activity_why_login2.xml.flat",
+        "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/layout/activity_why_login2.xml"
+    },
+    {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-v21_avd_show_password.xml.flat",
         "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/799231caafb89525390c3658faa72ebc/res/drawable-v21/avd_show_password.xml"
     },
@@ -3378,6 +3382,10 @@
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/drawable-ldpi_ic_more_horiz_black_24dp.png.flat",
         "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/generated/res/pngs/flavorDefault/debug/drawable-ldpi/ic_more_horiz_black_24dp.png"
+    },
+    {
+        "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/layout_activity_why_login.xml.flat",
+        "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/src/main/res/layout/activity_why_login.xml"
     },
     {
         "merged": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/res/merged/flavorDefault/debug/color-v23_abc_tint_switch_track.xml.flat",

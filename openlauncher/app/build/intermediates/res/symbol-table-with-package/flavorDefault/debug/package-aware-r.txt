@@ -990,7 +990,9 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
 dimen activity_margin
+dimen activity_vertical_margin
 dimen card_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1492,6 +1494,8 @@ id editIcon
 id edit_query
 id edit_text
 id email
+id email_login_form
+id email_sign_in_button
 id enableSwitch
 id end
 id end_padder
@@ -1557,6 +1561,8 @@ id line3
 id list
 id listMode
 id list_item
+id login_form
+id login_progress
 id map
 id masked
 id md_buttonDefaultNegative
@@ -1616,6 +1622,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
 id percent
 id phone
 id pin
@@ -1785,6 +1792,8 @@ layout activity_material_intro
 layout activity_minibar_edit
 layout activity_more
 layout activity_settings
+layout activity_why_login
+layout activity_why_login2
 layout color_edit
 layout color_preview
 layout color_selector
@@ -1980,6 +1989,8 @@ string about_rate
 string action
 string action_copy
 string action_delete
+string action_sign_in
+string action_sign_in_short
 string android_contribution_guide
 string app
 string app_bugreport_url
@@ -2026,6 +2037,10 @@ string device_admin_title
 string donate
 string edit
 string enable
+string error_field_required
+string error_incorrect_password
+string error_invalid_email
+string error_invalid_password
 string expand_button_title
 string fastadapter_lib_version
 string font_fontFamily_medium
@@ -2111,6 +2126,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string permission_rationale
 string placeholder
 string please_grant_permissions
 string please_wait
@@ -2311,6 +2327,8 @@ string pref_title__theme
 string project_contribution_info
 string project_license
 string project_team
+string prompt_email
+string prompt_password
 string rate_the_app
 string remove
 string rows
@@ -2325,6 +2343,7 @@ string start_typing_status
 string status_bar_notification_info_overflow
 string stop_typing_status
 string summary_collapsed_preference_list
+string title_activity_why_login
 string toast_app_uninstalled
 string toast_backup_error
 string toast_backup_success

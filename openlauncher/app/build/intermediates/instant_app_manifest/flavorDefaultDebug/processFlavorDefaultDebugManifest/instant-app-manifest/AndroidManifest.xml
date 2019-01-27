@@ -9,6 +9,10 @@
         android:minSdkVersion="17"
         android:targetSdkVersion="27" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -29,6 +33,11 @@
         android:taskAffinity=""
         android:testOnly="true"
         android:theme="@style/Home.Light" >
+        <activity
+            android:name="com.benny.openlauncher.chatbot.WhyLogin"
+            android:label="@string/title_activity_why_login" >
+        </activity>
+
         <meta-data
             android:name="android.max_aspect"
             android:value="2.1" />
