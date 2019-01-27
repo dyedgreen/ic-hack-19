@@ -138,6 +138,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-apk" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_app_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_app_info_output_file" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_main_apk_resources" />
@@ -210,6 +211,7 @@
     <orderEntry type="library" name="Gradle: com.afollestad.material-dialogs:core:0.9.6.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: de.psdev.licensesdialog:licensesdialog:1.8.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.nononsenseapps:filepicker:4.2.1@aar" level="project" />
+    <orderEntry type="module" module-name="chatkit" />
     <orderEntry type="module" module-name="chatkit" />
   </component>
 </module>

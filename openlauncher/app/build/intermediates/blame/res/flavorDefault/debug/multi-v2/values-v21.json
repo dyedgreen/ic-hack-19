@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bladedawson/AndroidStudioProjects/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/app/build/intermediates/incremental/mergeFlavorDefaultDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/bladedawson/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4c8c82e4e5203fcb9098057952acc25c/res/values-v21/values-v21.xml",
@@ -39,23 +39,6 @@
                         "endLines": "2,3,4,5,294,295,302,306,317,322",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,21431,21557,22014,22310,22944,23282"
-                    }
-                },
-                {
-                    "source": "/home/bladedawson/AndroidStudioProjects/openlauncher/chatkit/build/intermediates/packaged_res/debug/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "68",
-                        "endOffsets": "119"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endColumns": "68",
-                        "endOffsets": "418"
                     }
                 },
                 {
@@ -132,6 +115,23 @@
                         "endLines": "244,255",
                         "endColumns": "10,10",
                         "endOffsets": "18249,18966"
+                    }
+                },
+                {
+                    "source": "/home/bladedawson/programming/personal/ichack19/ic-hack-19/openlauncher/chatkit/build/intermediates/packaged_res/debug/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "68",
+                        "endOffsets": "119"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endColumns": "68",
+                        "endOffsets": "418"
                     }
                 }
             ]

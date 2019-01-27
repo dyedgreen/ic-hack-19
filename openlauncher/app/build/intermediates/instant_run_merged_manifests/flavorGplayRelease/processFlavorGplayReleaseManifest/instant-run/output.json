@@ -1,1 +1,0 @@
-[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":37,"versionName":"0.6.1","enabled":true,"outputFile":"app-flavorGplay-release-unsigned.apk","fullName":"flavorGplayRelease","baseName":"flavorGplay-release"},"path":"AndroidManifest.xml","properties":{"packageId":"com.benny.openlauncher","split":"","minSdkVersion":"17"}}]

@@ -38,14 +38,14 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int auto = 0x7f09002e;
-        public static final int baseline = 0x7f090032;
-        public static final int center = 0x7f09003f;
-        public static final int column = 0x7f09004b;
-        public static final int column_reverse = 0x7f09004c;
-        public static final int flex_end = 0x7f090088;
-        public static final int flex_start = 0x7f090089;
-        public static final int nowrap = 0x7f0900ee;
+        public static final int auto = 0x7f09002f;
+        public static final int baseline = 0x7f090033;
+        public static final int center = 0x7f090040;
+        public static final int column = 0x7f09004c;
+        public static final int column_reverse = 0x7f09004d;
+        public static final int flex_end = 0x7f090089;
+        public static final int flex_start = 0x7f09008a;
+        public static final int nowrap = 0x7f0900ef;
         public static final int row = 0x7f090106;
         public static final int row_reverse = 0x7f090107;
         public static final int space_around = 0x7f09012b;

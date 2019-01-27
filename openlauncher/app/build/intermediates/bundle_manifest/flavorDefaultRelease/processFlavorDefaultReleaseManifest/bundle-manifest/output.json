@@ -1,1 +1,0 @@
-[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":37,"versionName":"0.6.1","enabled":true,"outputFile":"app-flavorDefault-release-unsigned.apk","fullName":"flavorDefaultRelease","baseName":"flavorDefault-release"},"path":"AndroidManifest.xml","properties":{"packageId":"com.benny.openlauncher","split":"","minSdkVersion":"17"}}]

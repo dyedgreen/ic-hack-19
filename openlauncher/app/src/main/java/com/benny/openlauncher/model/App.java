@@ -7,9 +7,11 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 
 import android.graphics.drawable.Drawable;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.util.Log;
 
-public class App {
+public class App{
     public Drawable _icon;
     public String _label;
     public String _packageName;
@@ -71,4 +73,5 @@ public class App {
     public String getComponentName() {
         return new ComponentName(_packageName, _className).toString();
     }
+
 }

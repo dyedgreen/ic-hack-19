@@ -35,7 +35,6 @@ import com.benny.openlauncher.activity.homeparts.HpDragOption;
 import com.benny.openlauncher.activity.homeparts.HpInitSetup;
 import com.benny.openlauncher.activity.homeparts.HpSearchBar;
 import com.benny.openlauncher.chatbot.features.demo.def.DefaultMessagesActivity;
-import com.benny.openlauncher.chatbot.features.demo.def.DemoMessagesActivity;
 import com.benny.openlauncher.interfaces.AppDeleteListener;
 import com.benny.openlauncher.interfaces.AppUpdateListener;
 import com.benny.openlauncher.manager.Setup;
@@ -347,8 +346,10 @@ public final class HomeActivity extends Activity implements OnDesktopEditListene
 //                Intent intent = Tool.getIntentFromApp(app);
 //                context.startActivity(intent, getActivityAnimationOpts(view));
                 Intent intent = new Intent(this, DefaultMessagesActivity.class);
+                intent.putExtra("app_package_name", app.getPackageName());
                 context.startActivity(intent);
-                // close app drawer and other items in advance
+
+              // close app drawer and other items in advance
                 // annoying to wait for app drawer to close
                 handleLauncherResume();
             } catch (Exception e) {

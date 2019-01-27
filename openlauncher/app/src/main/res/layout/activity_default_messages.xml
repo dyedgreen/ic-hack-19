@@ -24,7 +24,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:inputHint="@string/hint_enter_a_message"
-        app:showAttachmentButton="true"/>
+        app:inputHint="@string/hint_enter_a_message"/>
+  <ImageView
+    android:id="@+id/app_icon_view"
+    android:layout_width="215dp"
+    android:layout_height="184dp"
+    android:layout_marginEnd="196dp"
+    android:layout_alignEnd="@+id/messagesList"
+    app:srcCompat="@drawable/bubble_circle"/>
 
 </RelativeLayout>

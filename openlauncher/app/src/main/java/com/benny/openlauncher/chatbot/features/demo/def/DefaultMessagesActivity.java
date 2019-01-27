@@ -2,14 +2,20 @@ package com.benny.openlauncher.chatbot.features.demo.def;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import android.widget.ImageView;
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.chatbot.common.data.model.Message;
 import com.benny.openlauncher.chatbot.common.data.model.User;
 import com.benny.openlauncher.chatbot.utils.AppUtils;
+import com.benny.openlauncher.model.App;
 import com.stfalcon.chatkit.messages.MessageInput;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
@@ -35,6 +41,18 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
     MessageInput input = (MessageInput) findViewById(R.id.input);
     input.setInputListener(this);
     input.setTypingListener(this);
+
+    Bundle bundle = getIntent().getExtras();
+    String app_package_name = bundle.getString("app_package_name");
+    try
+    {
+      ImageView app_icon_view = findViewById(R.id.app_icon_view);
+      Drawable icon = getPackageManager().getApplicationIcon(app_package_name);
+      app_icon_view.setImageDrawable(icon);
+    }
+    catch (PackageManager.NameNotFoundException e) {
+      e.printStackTrace();
+    }
   }
 
   @Override
@@ -43,6 +61,10 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
     return true;
   }
 
+  public void setIcon(Drawable icon) {
+
+
+  }
 
   private void initAdapter() {
     super.messagesAdapter = new MessagesListAdapter<>(super.senderId, super.imageLoader);

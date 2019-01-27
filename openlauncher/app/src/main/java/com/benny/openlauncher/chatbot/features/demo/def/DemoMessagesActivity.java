@@ -89,9 +89,9 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
   @Override
   public void onLoadMore(int page, int totalItemsCount) {
     Log.i("TAG", "onLoadMore: " + page + " " + totalItemsCount);
-    if (totalItemsCount < TOTAL_MESSAGES_COUNT) {
-      loadMessages();
-    }
+//    if (totalItemsCount < TOTAL_MESSAGES_COUNT) {
+//      loadMessages();
+//    }
   }
 
   @Override
@@ -102,14 +102,14 @@ public abstract class DemoMessagesActivity extends AppCompatActivity
   }
 
   protected void loadMessages() {
-    new Handler().postDelayed(new Runnable() { //imitation of internet connection
-      @Override
-      public void run() {
-        ArrayList<Message> messages = new ArrayList<>();
-        lastLoadedDate = messages.get(messages.size() - 1).getCreatedAt();
-        messagesAdapter.addToEnd(messages, false);
-      }
-    }, 1000);
+//    new Handler().postDelayed(new Runnable() { //imitation of internet connection
+//      @Override
+//      public void run() {
+//        ArrayList<Message> messages = ;
+//        lastLoadedDate = messages.get(messages.size() - 1).getCreatedAt();
+//        messagesAdapter.addToEnd(messages, false);
+//      }
+//    }, 1000);
   }
 
   private MessagesListAdapter.Formatter<Message> getMessageStringFormatter() {

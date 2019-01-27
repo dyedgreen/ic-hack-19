@@ -1382,6 +1382,7 @@ id appDrawerController
 id appDrawerIndicator
 id app_bar
 id app_grid
+id app_icon_view
 id app_widget_host
 id async
 id attachmentButton
@@ -1580,7 +1581,6 @@ id notification_main_column
 id notification_main_column_container
 id nowrap
 id packed
-id pager
 id parallax
 id parent
 id parentPanel
@@ -1747,7 +1747,6 @@ layout activity_default_dialogs
 layout activity_default_messages
 layout activity_hide_apps
 layout activity_home
-layout activity_main
 layout activity_material_intro
 layout activity_minibar_edit
 layout activity_more
