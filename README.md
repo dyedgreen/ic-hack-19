@@ -101,7 +101,7 @@ Note on uri's: For [https://tilman.xyz](https://tilman.xyz) the uri would be
 `tilman.xyz`, the icon should be `tilman.xyz/favicon.ico`. For an android app,
 the uri would be `com.example.myapp`, the icon should be empty.
 
-## `/<uri>/reasons` [GET]
+### `/<uri>/reasons` [GET]
 List reasons this app was opened
 - token (string) - session token
 
@@ -112,7 +112,7 @@ List reasons this app was opened
 }
 ```
 
-## `/<uri>/reasons/add` [POST]
+### `/<uri>/reasons/add` [POST]
 Add a reason to an app. Accepts:
 - token (string) - session token
 - reason (string) - reason
