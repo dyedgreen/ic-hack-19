@@ -20,7 +20,7 @@
         }
     ],
     "options_page": "html/options.html",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": ["http://*/", "activeTab", "declarativeContent", "storage"],
     "web_accessible_resources": ["images/send.svg"],
     "manifest_version": 2
 }

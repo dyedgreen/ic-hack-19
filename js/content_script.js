@@ -45,7 +45,7 @@ r_input = document.createElement("input");
 r_input.type = "text"
 r_input.id = "why--reply-textarea";
 r_input.placeholder = "Because...";
-r_input.addEventListener('keyup', function (e) {
+r_input.addEventListener('keydown', function (e) {
     if (e.keyCode === 13) {
         e.preventDefault();
         saveResponse();
