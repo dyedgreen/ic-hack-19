@@ -34,6 +34,18 @@ def login():
             error = str(e)
     return f.render_template("login.html", error=error, username=username)
 
+@app.route("/login/<string:token>", methods=["POST", "GET"])
+def login_token(token):
+    if f.session.get("token"):
+        return "", 204
+    try:
+        why.user_api.is_logged_in(token)
+        f.session["token"] = token
+        f.session.permanent = True
+    except Exception as e:
+        return str(e), 400
+    return "", 204
+
 @app.route("/logout/<string:token>", methods=["GET", "POST"])
 def logut(token):
     why.user_api.logout(token)

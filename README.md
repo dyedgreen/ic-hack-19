@@ -44,6 +44,12 @@ Create a new session. Accepts parameters:
 }
 ```
 
+Note: To recycle the web-app views, it is important to login.
+To automatically log in the user to the web app, there exists a
+route that accepts a token and uses it to set the appropriate
+cookies (if the token is valid). This route is:
+`/login/<token>`, it returns 400 on error and 204 on success.
+
 ### `/login/exists` [GET]
 Test if a given session is valid. Accepts parameters:
 - token (string)
