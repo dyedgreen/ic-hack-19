@@ -58,13 +58,15 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                 access_info.innerHTML = "No data available on this website for today."
                 stats.appendChild(access_info)
             }
+            link = document.createElement("a");
+            link.innerHTML = "Show full history online!";
+            link.href = server+"/app/"+host;
+            link.target = "_blank";
+            stats.appendChild(link);
         } else {
             access_info = document.createElement("p");
             access_info.innerHTML = "No data available on this website for today."
             stats.appendChild(access_info)
         }
-        link = document.createElement("a");
-        link.innerHTML = "Show full history online!"
-        stats.appendChild(link)
     })
 });

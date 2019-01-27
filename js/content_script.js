@@ -41,7 +41,6 @@ function saveResponse() {
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
                 let res = JSON.parse(this.responseText);
-                console.log(res)
                 if (typeof res === "object" && res["error"] === false) {
                     message1 = new MessageBox("from", res["reply"]);
                     message1.id = "why--fallback-reply";

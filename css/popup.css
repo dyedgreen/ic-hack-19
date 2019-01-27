@@ -21,3 +21,13 @@ body {
 #stats h1 {
     margin-top: -3px;
 }
+
+a {
+    color: whitesmoke;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #eee;
+}
