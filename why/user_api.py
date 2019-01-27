@@ -28,6 +28,11 @@ def login(app_name, username, password):
         raise ValueError("Invalid password")
     return user.create_session(app_name)
 
+def is_logged_in(token):
+    user = u.User.from_session(token)
+    if not user.exists:
+        raise ValueError("User does not exist")
+
 def logout(token):
     try:
         user = u.User.from_session(token)

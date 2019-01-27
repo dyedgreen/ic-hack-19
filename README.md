@@ -44,6 +44,17 @@ Create a new session. Accepts parameters:
 }
 ```
 
+### `/login/exists` [GET]
+Test if a given session is valid. Accepts parameters:
+- token (string)
+
+```
+{
+  error: bool / string,
+  exists: bool
+}
+```
+
 ### `/logout/<token>` [POST, DELETE]
 Deletes the session. Does not return anything.
 

@@ -109,6 +109,17 @@ def api_user_login(app_name):
         return f.jsonify(result), 400
     return f.jsonify(result)
 
+@app.route("/api/user/login/exists", methods=["GET"])
+def api_user_login_exists():
+    token = f.request.values["token"]
+    res = {"error":False, "exists":True}
+    try:
+        why.user_api.is_logged_in(token)
+    except Exception as e:
+        res["error"] = str(e)
+        res["exists"] = False
+    return f.jsonify(res)
+
 @app.route("/api/user/logout/<string:token>", methods=["POST", "DELETE"])
 def api_user_logout(token):
     why.user_api.logout(token)
