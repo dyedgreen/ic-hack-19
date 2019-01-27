@@ -15,7 +15,7 @@
       <h2>All the apps and websites you used (<a href="/sessions">manage sessions</a>, <a href="/logout/{{ token }}">logout</a>)</h2>
       {% for app in list %}
       <a class="item" href="/app/{{ app.uri }}">
-        {% if app.icon %}<img src="{{ app.icon }}" class="icon">{% endif %}
+        {% if app.icon %}<img src="{{ app.icon if app.icon[0:4] == 'http' else 'http://'+app.icon }}" class="icon">{% endif %}
         {{ app.name }}
       </a>
       {% endfor %}
