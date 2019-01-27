@@ -25,27 +25,33 @@ html {
   text-align: center;
 }
 .hero .logo {
-  with: 100px;
+  width: 267px;
   height: 100px;
   display: block;
-  margin: 0 0 auto auto;
+  margin: 100px auto 0 auto;
+  position: relative;
+}
+.hero .logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index:2;
+}
+.hero .logo:after {
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 0;
+  display: block;
+  position: absolute;
   background-color: #8EACBB;
   background-image: url(https://source.unsplash.com/user/nasa/200x200);
   background-origin: center center;
   background-size: 100% 100%;
   background-clip: repeat;
   border-radius: 100%;
-}
-.hero h1 {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 25px auto;
-  font-size: 50px;
-  font-family: "Vesper Libre";
-  font-weight: 700;
-  color: #263238;
-  text-align: center;
+  z-index:-1;
+  content: "";
 }
 .hero h2 {
   width: 100%;
@@ -83,7 +89,7 @@ html {
 .footer {
   width: 100%;
   display: block;
-  margin: 25px auto;
+  margin: 0 auto 25px auto;
   color: #90a4ae;
   text-align: center;
   text-decoration: none;
