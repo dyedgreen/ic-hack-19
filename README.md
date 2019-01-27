@@ -120,5 +120,6 @@ Add a reason to an app. Accepts:
 ```
 {
   error: bool / string
+  reply: string
 }
 ```

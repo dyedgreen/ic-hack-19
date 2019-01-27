@@ -186,9 +186,10 @@ def api_app_reasons(uri):
 def api_app_reasons_add(uri):
     token = f.request.values["token"]
     reason = f.request.values["reason"]
-    res = {"error":False}
+    res = {"error":False, "reply":"Okay, thanks!"}
     try:
         why.reason_api.add_reason(token, uri, reason)
+        res["reply"] = why.npl.reply(reason)
     except Exception as e:
         res["error"] = str(e)
         return f.jsonify(res), 400
