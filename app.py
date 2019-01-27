@@ -1,14 +1,77 @@
 import flask as f
+import random
 
 import why
 
 
 why.db.init()
 app = f.Flask(__name__)
+app.secret_key = b'en4t432.:ererg%$%&)=sd' # Need to get this somewhere else...
+
 
 @app.route("/")
-def test():
+def index():
     return f.render_template("index.html")
+
+## WEB APP ROUTES
+
+# LOGIN
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if f.session.get("token"):
+        return f.redirect(f.url_for("app_list"))
+    username = ""
+    error = False
+    if f.request.method == "POST":
+        username = f.request.form["username"]
+        password = f.request.form["password"]
+        try:
+            f.session["token"] = why.user_api.login("Web Login", username, password)
+            f.session.permanent = True
+            return f.redirect(f.url_for("app_list"))
+        except Exception as e:
+            error = str(e)
+    return f.render_template("login.html", error=error, username=username)
+
+@app.route("/logout/<string:token>", methods=["GET", "POST"])
+def logut(token):
+    why.user_api.logout(token)
+    return f.redirect(f.url_for("login"))
+
+@app.route("/sessions", methods=["GET"])
+def session_list():
+    if not f.session.get("token"):
+        return f.redirect(f.url_for("login"))
+    try:
+        session_list = why.user.User.from_session(f.session["token"]).sessions
+    except:
+        return f.redirect(f.url_for("login"))
+    return f.render_template("session_list.html", list=session_list)
+
+@app.route("/apps", methods=["GET"])
+def app_list():
+    if not f.session.get("token"):
+        return f.redirect(f.url_for("login"))
+    try:
+        app_list = why.reason.App.get_for_user(why.user.User.from_session(f.session["token"]))
+    except:
+        f.session["token"] = False
+        return f.redirect(f.url_for("login"))
+    return f.render_template("app_list.html", list=app_list, token=f.session["token"])
+
+@app.route("/app/<string:uri>", methods=["GET"])
+def reason_list(uri):
+    if not f.session.get("token"):
+        return f.redirect(f.url_for("login"))
+    try:
+        app = why.reason.App(uri, why.user.User.from_session(f.session["token"]))
+        if not app.exists:
+            raise Exception
+    except:
+        f.abort(404)
+    return f.render_template("reason_list.html", app=app, list=app.reasons)
+
 
 ## API ROUTES
 

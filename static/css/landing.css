@@ -1,0 +1,10 @@
+.logo {
+  with: 200px;
+  height: 200px;
+  display: block;
+  background-color: #8EACBB;
+  background-image: url(https://source.unsplash.com/200x200/?colorful);
+  background-origin: center center;
+  background-clip: repeat;
+  border-radius: 100%;
+}

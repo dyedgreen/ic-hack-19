@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Why? App List</title>
+
+    <link href="/static/css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="paper">
+      <h1>App List</h1>
+      <h2>All the apps and websites you used (<a href="/sessions">manage sessions</a>, <a href="/logout/{{ token }}">logout</a>)</h2>
+      {% for app in list %}
+      <a class="item" href="/app/{{ app.uri }}">{{ app.name }}</a>
+      {% endfor %}
+    </div>
+  </body>
+
+</html>

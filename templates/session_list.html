@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Why? Session List</title>
+
+    <link href="/static/css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="paper">
+      <h1>Session List</h1>
+      <h2>All the apps and websites you used (<a href="/apps">back to apps</a>)</h2>
+      {% for sess in list %}
+      <a class="item session" href="/logout/{{ sess.token }}">{{ sess.name }}</a>
+      {% endfor %}
+    </div>
+  </body>
+
+</html>

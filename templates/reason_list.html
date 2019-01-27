@@ -1,0 +1,21 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Why {{ app.name }}?</title>
+
+    <link href="/static/css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="paper">
+      <h1>Why {{ app.name }}?</h1>
+      <h2>This is why you used {{ app.name }} (<a href="/apps">see all apps</a>)</h2>
+      {% for reason in list %}
+      <div class="bubble left"><p>Why?</p></div>
+      <div class="bubble"><p>{{ reason }}</p></div>
+      {% endfor %}
+    </div>
+  </body>
+
+</html>
