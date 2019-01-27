@@ -55,11 +55,29 @@ function login_request() {
             } else {
                 chrome.storage.sync.set({'token': res["token"], 'username': u}, function() {
                     toast("success", "Logged in successfully!");
+                    addDB();
                     build_view();
                 });
             }
         }
     }
+}
+
+function addDB() {
+    chrome.storage.sync.get(['db', 'token'], function(data) {
+        db = data.db;
+        for(var hostname in db) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", server+"/api/app/"+hostname+"/create", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("token="+data.token+"&name="+hostname+"&icon=");
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    console.log(this);
+                }
+            }
+        }
+    })
 }
 
 function login_keydown(e) {

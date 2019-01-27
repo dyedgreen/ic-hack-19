@@ -18,7 +18,8 @@
     "content_scripts" : [
         {
         "matches": [
-            "https://www.test.com/"
+            "http://*/*",
+            "https://*/*"
             ],
         "js": ["js/content_script.js"],
         "css": ["css/content_style.css"],
