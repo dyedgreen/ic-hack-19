@@ -9,6 +9,7 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.StrictMode;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -85,10 +86,25 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
     super.messagesAdapter.addToStart(newMessage, true);
     Message response = new Message("Okay, thanks!", conscience, "Okay, thanks!");
     super.messagesAdapter.addToStart(response, true);
-    Handler handler = new Handler();
 
-//    postRequest();
-    handler.postDelayed(new Runnable() {
+    Handler handler = new Handler();
+    handler.post(new Runnable() {
+      @Override
+      public void run() {
+        try {
+          Log.i("msg", "I'm here");
+          String spacelessname = app_name.replace(" ", "%20");
+          postRequest(new URL("http:/10.0.2.2/api/app/"+app_package_name+"/create?token="+token+"&name="+spacelessname+"&icon="));
+          String spacelessinput = input.toString().replace(" ", "%20");
+          postRequest(new URL("http:/10.0.2.2/api/app/"+app_package_name+"/reasons/add?token=" + token + "&reason=" + spacelessinput));
+        } catch (MalformedURLException e) {
+          e.printStackTrace();
+        }
+      }
+    });
+
+    Handler handler1 = new Handler();
+    handler1.postDelayed(new Runnable() {
       @Override
       public void run() {
         Intent originalApp = getPackageManager().getLaunchIntentForPackage(app_package_name);
@@ -100,11 +116,10 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
     return true;
   }
 
-  public void postRequest(){
+  public void postRequest(URL url){
+    StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+    StrictMode.setThreadPolicy(policy);
     try {
-      String spacelessname = app_name.replace(" ", "%20");
-      URL url = new URL("http:/10.0.2.2/api/app/"+app_package_name+"/create?token="+token+"&name="+spacelessname+"&icon=");
-
       HttpURLConnection conn = (HttpURLConnection) url.openConnection();
       conn.setRequestMethod("POST");
 //        conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
@@ -116,12 +131,10 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
       DataOutputStream os = new DataOutputStream(conn.getOutputStream());
       //os.writeBytes(URLEncoder.encode(jsonParam.toString(), "UTF-8"));
 
+      Log.i("msg", String.valueOf(conn.getResponseCode()));
+      Log.i("status", conn.getResponseMessage());
 //        os.flush();
 //        os.close();
-
-      Log.i("STATUS", String.valueOf(conn.getResponseCode()));
-      Log.i("MSG" , conn.getResponseMessage());
-
       conn.disconnect();
       // Simulate network access.
     } catch (
@@ -135,7 +148,6 @@ public class DefaultMessagesActivity extends DemoMessagesActivity
       e.printStackTrace();
     }
   }
-
 
   private void initAdapter() {
     super.messagesAdapter = new MessagesListAdapter<>(super.senderId, super.imageLoader);

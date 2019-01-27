@@ -141,6 +141,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_app_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_app_info_output_file" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_main_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
@@ -213,6 +214,7 @@
     <orderEntry type="library" name="Gradle: com.nononsenseapps:filepicker:4.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.siyamed:android-shape-imageview:0.9.3@aar" level="project" />
+    <orderEntry type="module" module-name="chatkit" />
     <orderEntry type="module" module-name="chatkit" />
   </component>
 </module>

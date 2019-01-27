@@ -34,6 +34,7 @@ import android.widget.TextView;
 import com.stfalcon.chatkit.R;
 
 import java.lang.reflect.Field;
+import java.net.MalformedURLException;
 
 /**
  * Component for input outcoming messages
