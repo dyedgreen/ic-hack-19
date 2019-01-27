@@ -6,4 +6,4 @@ playground.py
 .DS_Store
 
 # Ignore application data
-data
+*.db
