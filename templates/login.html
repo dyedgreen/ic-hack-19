@@ -12,6 +12,9 @@
   <body>
     <form class="paper" action="/login" method="POST">
       <h1>Login</h1>
+      {% if error %}
+      <h2>{{ error }}</h2>
+      {% endif %}
       <input type="text" name="username" placeholder="Username" value="{{ username }}">
       <input type="password" name="password" placeholder="Password">
       <input type="submit">

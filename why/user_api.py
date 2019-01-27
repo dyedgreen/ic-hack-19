@@ -22,6 +22,8 @@ def create(username, password):
 
 def login(app_name, username, password):
     user = u.User(username)
+    if not user.exists:
+        raise ValueError("User does not exist")
     if not user.authenticate(password):
         raise ValueError("Invalid password")
     return user.create_session(app_name)
