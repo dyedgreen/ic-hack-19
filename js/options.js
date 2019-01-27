@@ -97,7 +97,24 @@ function logout_request() {
                 chrome.storage.sync.remove('token', function() {
                     toast("success", "Logged out!");
                     build_view();
-                })
+                });
+            }
+        }
+    });
+}
+
+function check_token() {
+    chrome.storage.sync.get('token', function(data) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", server+"/api/user/login/exists?token="+data.token, true);
+        xhttp.send();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                let res = JSON.parse(this.responseText);
+                console.log(res)
+                if (typeof res !== "object" || res["error"] !== false || res["exists"] !== true) {
+                    logout_request();
+                }
             }
         }
     });
@@ -177,6 +194,8 @@ function build_view() {
             register.classList.add("half-button");
             container.appendChild(register);
         } else {
+            check_token();
+
             container.appendChild(logo)
 
             greeting = document.createElement("p");
