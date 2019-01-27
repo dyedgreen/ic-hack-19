@@ -1,10 +1,93 @@
-.logo {
-  with: 200px;
-  height: 200px;
+/* LANDING STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background: #f5f5f5;
+}
+
+.hero {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  min-height: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  background-image: url(/static/images/hero.png);
+  background-size: 720px auto;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.hero .logo {
+  with: 100px;
+  height: 100px;
   display: block;
+  margin: 0 0 auto auto;
   background-color: #8EACBB;
-  background-image: url(https://source.unsplash.com/200x200/?colorful);
+  background-image: url(https://source.unsplash.com/collection/789734/200x200);
   background-origin: center center;
+  background-size: 100% 100%;
   background-clip: repeat;
   border-radius: 100%;
+}
+.hero h1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  font-size: 50px;
+  font-family: "Vesper Libre";
+  font-weight: 700;
+  color: #263238;
+  text-align: center;
+}
+.hero h2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #4f5b62;
+}
+
+.hero .button {
+  width: 250px;
+  height: 60px;
+  padding: 0 25px;
+  display: inline-block;
+  margin: 25px 15px;
+  color: #fff;
+  background: #607d8b;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 62px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  transition: .1s;
+}
+.hero .button:hover {
+  background: #34515e;
+  box-shadow: 0 5px 35px 0 rgba(0,0,0,0.3);
+}
+
+.footer {
+  width: 100%;
+  display: block;
+  margin: 25px auto;
+  color: #90a4ae;
+  text-align: center;
+  text-decoration: none;
+}
+.footer:hover {
+   text-decoration: underline;
 }
