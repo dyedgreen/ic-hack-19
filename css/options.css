@@ -29,6 +29,10 @@ body {
     box-shadow: #0000005e 0 1px 4px;
 }
 
+#logo {
+    width: 100%;
+}
+
 p {
     text-align: center;
 }

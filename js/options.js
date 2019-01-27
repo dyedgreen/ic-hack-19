@@ -116,11 +116,17 @@ function change_password_keydown(e) {
     }
 }
 
+logo = document.createElement("img")
+logo.src = chrome.runtime.getURL("images/brand.png")
+logo.id = "logo"
+
 function build_view() {
     container.innerHTML = ""
     chrome.storage.sync.get(['token', 'username'], function(data) {
         console.log(data)
         if (typeof data.token === "undefined") {
+            container.appendChild(logo)
+
             login_message = document.createElement("p");
             login_message.innerHTML = "Login to <b>Why?</b> to store your answers and history!";
             container.appendChild(login_message);
@@ -153,6 +159,8 @@ function build_view() {
             register.classList.add("half-button");
             container.appendChild(register);
         } else {
+            container.appendChild(logo)
+
             greeting = document.createElement("p");
             greeting.innerHTML = "Logged into <b>Why?</b> as "+data.username;
             container.appendChild(greeting);
