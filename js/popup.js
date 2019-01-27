@@ -14,7 +14,8 @@ function switcher() {
             db[host] = {
                 ask: checkbox.checked,
                 last_asked: 0,
-                counter: 0
+                counter: 0,
+                favicon: favicon
             }
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", server+"/api/app/"+host+"/create", true);
@@ -36,7 +37,7 @@ function switcher() {
 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     url = tabs[0].url;
-    favicon = tabs[0].favIconUrl;
+    favicon = encodeURIComponent(tabs[0].favIconUrl);
     var parser = document.createElement('a');
     parser.href = url;
     host = parser.hostname;

@@ -70,7 +70,7 @@ function addDB() {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", server+"/api/app/"+hostname+"/create", true);
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send("token="+data.token+"&name="+hostname+"&icon=");
+            xhttp.send("token="+data.token+"&name="+hostname+"&icon="+db[hostname]["favicon"]);
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4) {
                     console.log(this);
