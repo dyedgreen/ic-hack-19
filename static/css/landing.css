@@ -62,6 +62,11 @@ html {
   font-weight: 700;
   text-align: center;
   color: #4f5b62;
+   text-shadow:
+     -2px -2px 0 #f5f5f5,
+      2px -2px 0 #f5f5f5,
+      -2px 2px 0 #f5f5f5,
+       2px 2px 0 #f5f5f5;
 }
 
 .hero .button {
