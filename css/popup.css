@@ -1,9 +1,11 @@
 body {
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
 }
 
 #logo {
-    width: 200px;
+    width: 245px;
 }
 
 #hostname {
