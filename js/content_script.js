@@ -18,51 +18,31 @@ function saveResponse() {
     chat_window = document.getElementById("why--chat-window")
     container = document.getElementById("why--container")
 
-    if (r_input.value.length < 10) {
-        alert("At least 10 characters required!");
-    } else {
-        r_input.blur()
-        reply.classList.remove("why--reply-box")
-        send.classList.add("why--sent")
+    r_input.blur()
+    reply.classList.remove("why--reply-box")
+    send.classList.add("why--sent")
 
-        chrome.storage.sync.get(["db", "token"], function(data) {
-            db = data.db;
-            db[host]["last_asked"] = new Date().getTime() / 1000 / 60;
-            chrome.storage.sync.set({db: db});
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", server+"/api/app/"+host+"/reasons/add", true);
-            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send("token="+data.token+"&reason="+r_input.value);
-            setTimeout(function() {
-                if (document.getElementById("why--server-reply") === null) {
-                    console.log("Falling back on befault message");
-                    message1 = new MessageBox("from", "Ok, thanks!");
-                    message1.div.style.animationName = "fade-in"
-                    message1.div.style.animationDuration = "0.5s"
-                    chat_window.appendChild(message1.div);
-                }
-            }, 500)
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                    let res = JSON.parse(this.responseText);
-                    if (typeof res === "object" && res["error"] === false) {
-                        message1 = new MessageBox("from", res["reply"]);
-                        message1.div.id = "why--server-reply";
-                        message1.div.style.animationName = "fade-in"
-                        message1.div.style.animationDuration = "0.5s"
-                        chat_window.appendChild(message1.div);
-                    }
-                }
-            }
-        });
+    chrome.storage.sync.get(["db", "token"], function(data) {
+        db = data.db;
+        db[host]["last_asked"] = new Date().getTime() / 1000 / 60;
+        if (typeof db[host]["reasons"]!== 'undefined'){
+            db[host]["reasons"].push(r_input.value);
+        } else {
+            db[host]["reasons"] = [r_input.value];
+        }
+        chrome.storage.sync.set({db: db});
+        message1 = new MessageBox("from", "Ok, thanks!");
+        message1.div.style.animationName = "fade-in"
+        message1.div.style.animationDuration = "0.5s"
+        chat_window.appendChild(message1.div);
+    });
 
+    setTimeout(function() {
+        container.classList.add("why--fadeout");
         setTimeout(function() {
-            container.classList.add("why--fadeout");
-            setTimeout(function() {
-                container.style.display = "none";
-            }, 500)
-        }, 2000);
-    }
+            container.style.display = "none";
+        }, 500)
+    }, 2000);
 }
 
 function ask() {
@@ -123,10 +103,9 @@ chrome.storage.sync.get("db", function(data) {
             } else {
                 db[host]["counter"] += 1;
             }
-            db[host]["last_asked"] = current;
             chrome.storage.sync.set({db: db}, function() {
                 ask();
             })
         }
     }
-})
+});

@@ -13,7 +13,8 @@ chrome.runtime.onInstalled.addListener(function() {
             ask: true,
             last_asked: 0,
             counter: 0,
-            favicon: encodeURIComponent(favicons[i])
+            favicon: encodeURIComponent(favicons[i]),
+            reasons: []
         }
     }
     chrome.storage.sync.set({db: database})

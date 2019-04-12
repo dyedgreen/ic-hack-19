@@ -251,4 +251,18 @@ function build_view() {
         }
     });
 }
+
+reasons = document.createElement("p");
+chrome.storage.sync.get(["db"], function(data) {
+    db = data.db;
+    text = "";
+    for (var key in db) {
+        console.log(db[key])
+        text += "<b>" + key + "</b><br>";
+        text += "\t" + db[key]["reasons"] + "<br>";
+    }
+    reasons.innerHTML = text
+});
+document.body.appendChild(reasons)
+
 build_view();
